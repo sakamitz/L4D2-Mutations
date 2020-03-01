@@ -1,0 +1,9 @@
+"maliciousboomer"
+{
+	"base" "coop"
+	"maxplayers"    "4"
+	"DisplayTitle"	"Malicious Boomer"
+	"Description"	"Boomers are everywhere, be on your feet and don't get vomited!"
+	"Image"		"maps/any"
+	"Author"	"sakamitz"
+}

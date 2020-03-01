@@ -1,0 +1,12 @@
+"AddonInfo"
+{
+	addonSteamAppID		550
+	addontitle			"Malicious Boomer"
+	addonContent_Script 1
+	addonversion		1.0
+	addonauthor			"sakamitz"
+	addonauthorSteamID  "sakamitz"
+	addonSteamGroupName	"L4D2 Scripting Devel"
+	addonDescription	"Special Infected also likes boomer vomits."
+	addonDescription_ZH "特感也喜欢胆汁的气味"
+}
