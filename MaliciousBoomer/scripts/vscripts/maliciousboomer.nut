@@ -1,7 +1,6 @@
 IncludeScript( "VSLib" );
 
-MutationOptions <-
-{
+MutationOptions <- {
 	CommonLimit  = 0
 	MegaMobSize  = 0
 	WanderingZombieDensityModifier = 0
@@ -19,8 +18,7 @@ MutationOptions <-
 	TotalBoomer = 15  // 15 boomers can spawn in a wave
 }
 
-::ArrSpecialInfectedWithWeight <- 
-[
+::ArrSpecialInfectedWithWeight <- [
 	Z_TANK,
 	Z_CHARGER,
 	Z_CHARGER,
@@ -41,37 +39,17 @@ RoundVars.DuringRelax   <- false;
 ::RelaxTimer <- -1;
 
 
-function Notifications::OnTankSpawned::KillTankIfNotVomited(tank, params)
-{
-	// If the player has not gotten vomited yet, then don't let this tank spawn.
-	if (RoundVars.DidGetVomited == false)
-		tank.Kill();
-	
+function Notifications::OnTankSpawned::ResetHealth(tank, params) {
 	tank.SetHealth(2000);
 }
 
-function Notifications::OnSpawn::KillBoomerIfAlreadyVomited(player, params)
-{
-	if (RoundVars.DidGetVomited == true && player.GetPlayerType() == Z_BOOMER)
-		player.Kill();
-}
-
-function Notifications::OnSpawn::KillAllInfectedInRelaxTime(player, params)
-{
-	if (RoundVars.DuringRelax == true)
-		player.Kill();
-}
-
-// Stop spawning SI after vomit event ends
-::Dropout <- function(params)
-{
+// Relax for a short period after a mob
+::Dropout <- function(params) {
 	RoundVars.DidGetVomited <- false;
-
 	RoundVars.DuringRelax   <- true;
-	if (RelaxTimer >= 0)
-	{
+
+	if (RelaxTimer >= 0) {
 		Timers.RemoveTimer(RelaxTimer);
-		RelaxTimer <- -1;
 	}
 
 	RelaxTimer <- Timers.AddTimer(10.0, false, ResetRound);
@@ -79,8 +57,7 @@ function Notifications::OnSpawn::KillAllInfectedInRelaxTime(player, params)
 	// Utils.SayToAll("Dropout was called.");
 }
 
-::ResetRound <- function(params)
-{
+::ResetRound <- function(params) {
 	RoundVars.DuringRelax <- false;
 
 	// Utils.SayToAll("ResetRound was called.");
@@ -92,10 +69,8 @@ function Notifications::OnPlayerVomited::ChangeDidGetVomited(victim, boomer, par
 	{
 		RoundVars.DidGetVomited <- true;
 	
-		if (BoomTimer >= 0)
-		{
+		if (BoomTimer >= 0) {
 			Timers.RemoveTimer(BoomTimer);
-			BoomTimer <- -1;
 		}
 			
 		BoomTimer <- Timers.AddTimer(20.0, false, Dropout);
@@ -109,14 +84,20 @@ function Notifications::OnPlayerVomited::ChangeDidGetVomited(victim, boomer, par
 // The following function will spawn either a boomer or another SI near a player
 ::SpawnInfectedQuickly <- function (params)
 {
+    // Don't spawn SI during relax time
+    if (RoundVars.DuringRelax) {
+        return;
+    }
+
 	foreach (player in Players.AliveSurvivors())
 	{
 		if (RoundVars.DidGetVomited) {
 			SI <- Utils.GetRandValueFromArray(ArrSpecialInfectedWithWeight);
 			Utils.SpawnZombieNearPlayer(player, SI, 800, 512);
 		}
-		else
+		else {
 			Utils.SpawnZombieNearPlayer(player, Z_BOOMER, 800, 512);
+        }
 	}
 }
 
