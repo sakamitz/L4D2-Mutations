@@ -48,18 +48,15 @@ function Notifications::OnTankSpawned::ResetHealth(tank, params) {
 	RoundVars.DidGetVomited <- false;
 	RoundVars.DuringRelax   <- true;
 
-	if (RelaxTimer >= 0) {
-		Timers.RemoveTimer(RelaxTimer);
-	}
-
+	Timers.RemoveTimer(BoomTimer);
 	RelaxTimer <- Timers.AddTimer(10.0, false, ResetRound);
 
 	// Utils.SayToAll("Dropout was called.");
 }
 
 ::ResetRound <- function(params) {
+	Timers.RemoveTimer(RelaxTimer);
 	RoundVars.DuringRelax <- false;
-
 	// Utils.SayToAll("ResetRound was called.");
 }
 
@@ -68,11 +65,6 @@ function Notifications::OnPlayerVomited::ChangeDidGetVomited(victim, boomer, par
 	if (RoundVars.DidGetVomited == false && RoundVars.DuringRelax == false)
 	{
 		RoundVars.DidGetVomited <- true;
-	
-		if (BoomTimer >= 0) {
-			Timers.RemoveTimer(BoomTimer);
-		}
-			
 		BoomTimer <- Timers.AddTimer(20.0, false, Dropout);
 
 		// Utils.SayToAll("DidGetVomited was called.");
