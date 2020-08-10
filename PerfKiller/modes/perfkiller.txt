@@ -1,0 +1,9 @@
+"perfkiller"
+{
+    "base" "coop"
+    "maxplayers"    "4"
+    "DisplayTitle"  "Perfectionism Killer"
+    "Description"   "You mess it up when you press R"
+    "Image"     "maps/any"
+    "Author"    "sakamitz"
+}

@@ -1,0 +1,6728 @@
+"GameModes"
+{
+	"coop"
+	{
+		"base"		"coop"
+		"maxplayers"	"4"
+		
+		"x360ctx"	"0"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+		"x360presence:"
+		{
+			"network:offline"	"11"
+			"play:commentary"	"3"
+			"play:credits"		"2"
+		}
+
+		"hasdifficulty"		"1"
+		convar {
+			sb_max_team_melee_weapons 1
+			sb_melee_approach_victim 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_allow_shoot_through_survivors 0
+			sb_allow_leading 0
+			sb_battlestation_human_hold_time 2
+			sb_sidestep_for_horde 1
+			sb_toughness_buffer 40
+			sb_temp_health_consider_factor 0.75
+			sb_friend_immobilized_reaction_time_normal 0.001
+			sb_friend_immobilized_reaction_time_hard 0.001
+			sb_friend_immobilized_reaction_time_expert 0.001
+			sb_friend_immobilized_reaction_time_vs 0.001
+			sb_separation_range 150
+			sb_separation_danger_min_range 150
+			sb_separation_danger_max_range 600
+			sb_escort 1
+			sb_transition 0
+			sb_close_checkpoint_door_interval 0.25
+			sb_max_battlestation_range_from_human 200
+			sb_battlestation_give_up_range_from_human 500
+			sb_close_threat_range 250
+			sb_threat_close_range 250
+			sb_threat_very_close_range 250
+			sb_threat_medium_range 500
+			sb_threat_far_range 1000
+			sb_threat_very_far_range 2000
+			sb_neighbor_range 200
+			sb_follow_stress_factor 100
+			sb_locomotion_wait_threshold 2
+			sb_path_lookahead_range 1000
+			sb_near_hearing_range 1000
+			sb_far_hearing_range 2000
+			sb_combat_saccade_speed 2000
+		}
+	}
+
+	"coopbl"
+	{
+		"base"		"coop"
+		"maxplayers"	"4"
+		
+		"x360ctx"	"0"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+		"x360presence:"
+		{
+			"network:offline"	"11"
+			"play:commentary"	"3"
+			"play:credits"		"2"
+		}
+
+		"hasdifficulty"		"1"
+		convar {
+			sb_allow_leading 1
+		}
+	}
+	
+	"coopdf"
+	{
+		"base"		"coop"
+		"maxplayers"	"4"
+		
+		"x360ctx"	"0"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+		"x360presence:"
+		{
+			"network:offline"	"11"
+			"play:commentary"	"3"
+			"play:credits"		"2"
+		}
+
+		"hasdifficulty"		"1"
+		convar {
+			sb_allow_leading 0
+			sb_allow_shoot_through_survivors 1
+			sb_battlestation_give_up_range_from_human 1500
+			sb_battlestation_human_hold_time 4
+			sb_close_checkpoint_door_interval 2
+			sb_close_threat_range 200
+			sb_combat_saccade_speed 1000
+			sb_escort 0
+			sb_far_hearing_range 1500
+			sb_follow_stress_factor 0.5
+			sb_friend_immobilized_reaction_time_expert 0.5
+			sb_friend_immobilized_reaction_time_hard 1.0
+			sb_friend_immobilized_reaction_time_normal 2.0
+			sb_friend_immobilized_reaction_time_vs 0.5
+			sb_locomotion_wait_threshold 10
+			sb_max_battlestation_range_from_human 750
+			sb_max_team_melee_weapons 0
+			sb_melee_approach_victim 0
+			sb_near_hearing_range 500
+			sb_neighbor_range 300
+			sb_path_lookahead_range 200
+			sb_separation_danger_max_range 600
+			sb_separation_danger_min_range 200
+			sb_separation_range 200
+			sb_sidestep_for_horde 0
+			sb_temp_health_consider_factor 0.5
+			sb_threat_close_range 150
+			sb_threat_far_range 600
+			sb_threat_medium_range 300
+			sb_threat_very_close_range 150
+			sb_threat_very_far_range 1500
+			sb_toughness_buffer 15
+			sb_transition 1
+		}
+	}
+	
+	"realism"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"	// realism
+		"x360ctx"	"6"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+
+		"hasdifficulty"		"1"
+
+		// set base gamemode convars first, then the current gamemode
+		convar {
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+			sb_max_team_melee_weapons 1
+			sb_melee_approach_victim 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_allow_shoot_through_survivors 0
+			sb_allow_leading 0
+			sb_battlestation_human_hold_time 2
+			sb_sidestep_for_horde 1
+			sb_toughness_buffer 40
+			sb_temp_health_consider_factor 0.75
+			sb_friend_immobilized_reaction_time_normal 0.001
+			sb_friend_immobilized_reaction_time_hard 0.001
+			sb_friend_immobilized_reaction_time_expert 0.001
+			sb_friend_immobilized_reaction_time_vs 0.001
+			sb_separation_range 150
+			sb_separation_danger_min_range 150
+			sb_separation_danger_max_range 600
+			sb_escort 1
+			sb_transition 0
+			sb_close_checkpoint_door_interval 0.25
+			sb_max_battlestation_range_from_human 200
+			sb_battlestation_give_up_range_from_human 500
+			sb_close_threat_range 250
+			sb_threat_close_range 250
+			sb_threat_very_close_range 250
+			sb_threat_medium_range 500
+			sb_threat_far_range 1000
+			sb_threat_very_far_range 2000
+			sb_neighbor_range 200
+			sb_follow_stress_factor 100
+			sb_locomotion_wait_threshold 2
+			sb_path_lookahead_range 1000
+			sb_near_hearing_range 1000
+			sb_far_hearing_range 2000
+			sb_combat_saccade_speed 2000
+		}
+	}
+		
+	"realismbl"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"	// realism
+		"x360ctx"	"6"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+
+		"hasdifficulty"		"1"
+
+		// set base gamemode convars first, then the current gamemode
+		convar {
+			sb_allow_leading 1
+		}
+	}
+	
+	"realismdf"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"	// realism
+		"x360ctx"	"6"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+
+		"hasdifficulty"		"1"
+
+		// set base gamemode convars first, then the current gamemode
+		convar {
+			sb_allow_leading 0
+			sb_allow_shoot_through_survivors 1
+			sb_battlestation_give_up_range_from_human 1500
+			sb_battlestation_human_hold_time 4
+			sb_close_checkpoint_door_interval 2
+			sb_close_threat_range 200
+			sb_combat_saccade_speed 1000
+			sb_escort 0
+			sb_far_hearing_range 1500
+			sb_follow_stress_factor 0.5
+			sb_friend_immobilized_reaction_time_expert 0.5
+			sb_friend_immobilized_reaction_time_hard 1.0
+			sb_friend_immobilized_reaction_time_normal 2.0
+			sb_friend_immobilized_reaction_time_vs 0.5
+			sb_locomotion_wait_threshold 10
+			sb_max_battlestation_range_from_human 750
+			sb_max_team_melee_weapons 0
+			sb_melee_approach_victim 0
+			sb_near_hearing_range 500
+			sb_neighbor_range 300
+			sb_path_lookahead_range 200
+			sb_separation_danger_max_range 600
+			sb_separation_danger_min_range 200
+			sb_separation_range 200
+			sb_sidestep_for_horde 0
+			sb_temp_health_consider_factor 0.5
+			sb_threat_close_range 150
+			sb_threat_far_range 600
+			sb_threat_medium_range 300
+			sb_threat_very_close_range 150
+			sb_threat_very_far_range 1500
+			sb_toughness_buffer 15
+			sb_transition 1
+		}
+	}
+
+	"survival"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"	// survival
+		"x360ctx"	"3"
+		"x360matchrule"		"2"
+		"x360matchruleteam"	"3"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+		convar {
+			sb_max_team_melee_weapons 1
+			sb_melee_approach_victim 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_allow_shoot_through_survivors 0
+			sb_allow_leading 0
+			sb_battlestation_human_hold_time 2
+			sb_sidestep_for_horde 1
+			sb_toughness_buffer 40
+			sb_temp_health_consider_factor 0.75
+			sb_friend_immobilized_reaction_time_normal 0.001
+			sb_friend_immobilized_reaction_time_hard 0.001
+			sb_friend_immobilized_reaction_time_expert 0.001
+			sb_friend_immobilized_reaction_time_vs 0.001
+			sb_separation_range 150
+			sb_separation_danger_min_range 150
+			sb_separation_danger_max_range 600
+			sb_escort 1
+			sb_transition 0
+			sb_close_checkpoint_door_interval 0.25
+			sb_max_battlestation_range_from_human 200
+			sb_battlestation_give_up_range_from_human 500
+			sb_close_threat_range 250
+			sb_threat_close_range 250
+			sb_threat_very_close_range 250
+			sb_threat_medium_range 500
+			sb_threat_far_range 1000
+			sb_threat_very_far_range 2000
+			sb_neighbor_range 200
+			sb_follow_stress_factor 100
+			sb_locomotion_wait_threshold 2
+			sb_path_lookahead_range 1000
+			sb_near_hearing_range 1000
+			sb_far_hearing_range 2000
+			sb_combat_saccade_speed 2000
+		}
+	}
+	
+	"survivalbl"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"	// survival
+		"x360ctx"	"3"
+		"x360matchrule"		"2"
+		"x360matchruleteam"	"3"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+		convar {
+			sb_allow_leading 1
+		}
+	}
+	
+	"survivaldf"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"	// survival
+		"x360ctx"	"3"
+		"x360matchrule"		"2"
+		"x360matchruleteam"	"3"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+		convar {
+			sb_allow_leading 0
+			sb_allow_shoot_through_survivors 1
+			sb_battlestation_give_up_range_from_human 1500
+			sb_battlestation_human_hold_time 4
+			sb_close_checkpoint_door_interval 2
+			sb_close_threat_range 200
+			sb_combat_saccade_speed 1000
+			sb_escort 0
+			sb_far_hearing_range 1500
+			sb_follow_stress_factor 0.5
+			sb_friend_immobilized_reaction_time_expert 0.5
+			sb_friend_immobilized_reaction_time_hard 1.0
+			sb_friend_immobilized_reaction_time_normal 2.0
+			sb_friend_immobilized_reaction_time_vs 0.5
+			sb_locomotion_wait_threshold 10
+			sb_max_battlestation_range_from_human 750
+			sb_max_team_melee_weapons 0
+			sb_melee_approach_victim 0
+			sb_near_hearing_range 500
+			sb_neighbor_range 300
+			sb_path_lookahead_range 200
+			sb_separation_danger_max_range 600
+			sb_separation_danger_min_range 200
+			sb_separation_range 200
+			sb_sidestep_for_horde 0
+			sb_temp_health_consider_factor 0.5
+			sb_threat_close_range 150
+			sb_threat_far_range 600
+			sb_threat_medium_range 300
+			sb_threat_very_close_range 150
+			sb_threat_very_far_range 1500
+			sb_toughness_buffer 15
+			sb_transition 1
+		}
+	}
+
+	"versus"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	// versus
+		"x360ctx"	"1"
+		"x360matchrule"		"1"
+		"x360matchruleteam"	"3"
+		"x360presence"		"7"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+			sb_max_team_melee_weapons 1
+			sb_melee_approach_victim 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_allow_shoot_through_survivors 0
+			sb_allow_leading 0
+			sb_battlestation_human_hold_time 2
+			sb_sidestep_for_horde 1
+			sb_toughness_buffer 40
+			sb_temp_health_consider_factor 0.75
+			sb_friend_immobilized_reaction_time_normal 0.001
+			sb_friend_immobilized_reaction_time_hard 0.001
+			sb_friend_immobilized_reaction_time_expert 0.001
+			sb_friend_immobilized_reaction_time_vs 0.001
+			sb_separation_range 150
+			sb_separation_danger_min_range 150
+			sb_separation_danger_max_range 600
+			sb_escort 1
+			sb_transition 0
+			sb_close_checkpoint_door_interval 0.25
+			sb_max_battlestation_range_from_human 200
+			sb_battlestation_give_up_range_from_human 500
+			sb_close_threat_range 250
+			sb_threat_close_range 250
+			sb_threat_very_close_range 250
+			sb_threat_medium_range 500
+			sb_threat_far_range 1000
+			sb_threat_very_far_range 2000
+			sb_neighbor_range 200
+			sb_follow_stress_factor 100
+			sb_locomotion_wait_threshold 2
+			sb_path_lookahead_range 1000
+			sb_near_hearing_range 1000
+			sb_far_hearing_range 2000
+			sb_combat_saccade_speed 2000
+			
+			// these are 360 only convar changes, if you prefix with 360_, they'll
+			// get set on 360 and dedicated for 360
+			"360_z_mega_mob_size" 25
+			"360_z_mob_spawn_max_size" 18
+			"360_z_versus_wandering_density" 0.026
+		}
+	}
+	
+	"versusbl"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	// versus
+		"x360ctx"	"1"
+		"x360matchrule"		"1"
+		"x360matchruleteam"	"3"
+		"x360presence"		"7"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			sb_allow_leading 1
+		}
+	}
+	
+	"versusdf"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	// versus
+		"x360ctx"	"1"
+		"x360matchrule"		"1"
+		"x360matchruleteam"	"3"
+		"x360presence"		"7"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			sb_allow_leading 0
+			sb_allow_shoot_through_survivors 1
+			sb_battlestation_give_up_range_from_human 1500
+			sb_battlestation_human_hold_time 4
+			sb_close_checkpoint_door_interval 2
+			sb_close_threat_range 200
+			sb_combat_saccade_speed 1000
+			sb_escort 0
+			sb_far_hearing_range 1500
+			sb_follow_stress_factor 0.5
+			sb_friend_immobilized_reaction_time_expert 0.5
+			sb_friend_immobilized_reaction_time_hard 1.0
+			sb_friend_immobilized_reaction_time_normal 2.0
+			sb_friend_immobilized_reaction_time_vs 0.5
+			sb_locomotion_wait_threshold 10
+			sb_max_battlestation_range_from_human 750
+			sb_max_team_melee_weapons 0
+			sb_melee_approach_victim 0
+			sb_near_hearing_range 500
+			sb_neighbor_range 300
+			sb_path_lookahead_range 200
+			sb_separation_danger_max_range 600
+			sb_separation_danger_min_range 200
+			sb_separation_range 200
+			sb_sidestep_for_horde 0
+			sb_temp_health_consider_factor 0.5
+			sb_threat_close_range 150
+			sb_threat_far_range 600
+			sb_threat_medium_range 300
+			sb_threat_very_close_range 150
+			sb_threat_very_far_range 1500
+			sb_toughness_buffer 15
+			sb_transition 1
+		}
+	}
+
+	"scavenge"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"	// scavenge
+		"x360ctx"	"4"
+		"x360matchrule"		"4"
+		"x360matchruleteam"	"5"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+		"hasroundlimit"		"1"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+			sb_max_team_melee_weapons 1
+			sb_melee_approach_victim 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_allow_shoot_through_survivors 0
+			sb_allow_leading 0
+			sb_battlestation_human_hold_time 2
+			sb_sidestep_for_horde 1
+			sb_toughness_buffer 40
+			sb_temp_health_consider_factor 0.75
+			sb_friend_immobilized_reaction_time_normal 0.001
+			sb_friend_immobilized_reaction_time_hard 0.001
+			sb_friend_immobilized_reaction_time_expert 0.001
+			sb_friend_immobilized_reaction_time_vs 0.001
+			sb_separation_range 150
+			sb_separation_danger_min_range 150
+			sb_separation_danger_max_range 600
+			sb_escort 1
+			sb_transition 0
+			sb_close_checkpoint_door_interval 0.25
+			sb_max_battlestation_range_from_human 200
+			sb_battlestation_give_up_range_from_human 500
+			sb_close_threat_range 250
+			sb_threat_close_range 250
+			sb_threat_very_close_range 250
+			sb_threat_medium_range 500
+			sb_threat_far_range 1000
+			sb_threat_very_far_range 2000
+			sb_neighbor_range 200
+			sb_follow_stress_factor 100
+			sb_locomotion_wait_threshold 2
+			sb_path_lookahead_range 1000
+			sb_near_hearing_range 1000
+			sb_far_hearing_range 2000
+			sb_combat_saccade_speed 2000
+
+			// these are 360 only convar changes, if you prefix with 360_, they'll
+			// get set on 360 and dedicated for 360
+			"360_z_mega_mob_size" 25
+			"360_z_mob_spawn_max_size" 18
+			"360_z_versus_wandering_density" 0.026
+		}
+	}
+	
+	"scavengebl"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"	// scavenge
+		"x360ctx"	"4"
+		"x360matchrule"		"4"
+		"x360matchruleteam"	"5"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+		"hasroundlimit"		"1"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			sb_allow_leading 1
+		}
+	}
+	
+	"scavengedf"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"	// scavenge
+		"x360ctx"	"4"
+		"x360matchrule"		"4"
+		"x360matchruleteam"	"5"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+		"hasroundlimit"		"1"
+
+		"playercontrolledzombies"	"1"
+
+		convar
+		{
+			sb_allow_leading 0
+			sb_allow_shoot_through_survivors 1
+			sb_battlestation_give_up_range_from_human 1500
+			sb_battlestation_human_hold_time 4
+			sb_close_checkpoint_door_interval 2
+			sb_close_threat_range 200
+			sb_combat_saccade_speed 1000
+			sb_escort 0
+			sb_far_hearing_range 1500
+			sb_follow_stress_factor 0.5
+			sb_friend_immobilized_reaction_time_expert 0.5
+			sb_friend_immobilized_reaction_time_hard 1.0
+			sb_friend_immobilized_reaction_time_normal 2.0
+			sb_friend_immobilized_reaction_time_vs 0.5
+			sb_locomotion_wait_threshold 10
+			sb_max_battlestation_range_from_human 750
+			sb_max_team_melee_weapons 0
+			sb_melee_approach_victim 0
+			sb_near_hearing_range 500
+			sb_neighbor_range 300
+			sb_path_lookahead_range 200
+			sb_separation_danger_max_range 600
+			sb_separation_danger_min_range 200
+			sb_separation_range 200
+			sb_sidestep_for_horde 0
+			sb_temp_health_consider_factor 0.5
+			sb_threat_close_range 150
+			sb_threat_far_range 600
+			sb_threat_medium_range 300
+			sb_threat_very_close_range 150
+			sb_threat_very_far_range 1500
+			sb_toughness_buffer 15
+			sb_transition 1
+		}
+	}
+	
+	"mutation1"
+	{
+		"base"		"coop"
+		"maxplayers"    "1"
+		"achievementindex"	"0"
+		"x360ctx"	"7"
+		"x360presence" 	"13"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			z_jockey_ride_damage 15
+			z_pounce_damage 10
+			tongue_choke_damage_amount 15
+			tongue_drag_damage_amount 15
+		}
+	}
+
+	"mutation2"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"1"
+		"x360ctx"	"8"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"mutation3"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"2"
+		"x360ctx"	"9"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			pain_pills_decay_rate 0.27
+		}
+	}
+
+	"mutation4"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"3"
+		"x360ctx"	"10"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"mutation5"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"4"
+		"x360ctx"	"11"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sb_melee_approach_victim 1
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	}
+	"mutation7"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"6"
+		"x360ctx"	"13"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sb_melee_approach_victim 1
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	}
+
+	"mutation8"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"7"
+		"x360ctx"	"14"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_permawipe 1
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+		}
+	}
+
+	"mutation9"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"8"
+		"x360ctx"	"15"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"mutation10"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"9"
+		"x360ctx"	"16"
+		"x360presence"	"5"
+		"x360presence:"
+		{
+			"state:game"	"10"
+		}
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"mutation11"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"10"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"18"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	}
+
+	"mutation12"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"13"	// intentionally mis-numbered
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"20"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+
+	}
+
+	"mutation13"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"
+		"achievementindex"	"12"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"22"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	}
+
+	"mutation14"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"11"	// intentionally mis-numbered
+		"x360ctx"	"24"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"sv_infinite_primary_ammo" 1
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	}
+
+	"mutation15"
+	{
+		"base"		"survival"
+		"maxplayers"    "8"
+		"achievementindex"	"14"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"28"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	}
+
+	"mutation16"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"15"
+		"x360ctx"	"25"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+
+	"mutation17"
+	{
+		"base"		"coop"
+		"maxplayers"    "1"
+		"achievementindex"	"16"
+		"x360ctx"	"17"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	}
+
+
+	"mutation18"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"17"
+		"x360ctx"	"26"
+		"dlcmask"	"0x0000000000000002"
+
+		"playercontrolledzombies"	"1"
+
+		convar {
+			pain_pills_decay_rate 0.27
+		}
+	}
+
+	"mutation19"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"18"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"30"
+		"dlcmask"	"0x0000000000000002"
+		
+		convar
+		{
+			"z_spawn_safety_range" 600
+			"z_ghost_travel_distance" 2000
+			"z_tank_health" 2000
+			"z_frustration" 0
+		}		
+	}
+
+	"mutation20"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"19"
+		"x360ctx"	"31"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"community1" // special delivery
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"32"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			car_alarm_chirp_distance 0
+			car_alarm_distance 0
+			hud_deathnotice_threats 1
+			z_boomer_gibs 1
+		}
+	}
+
+	"community2" // flu season
+	{
+
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"33"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"sb_max_team_melee_weapons" 1
+			"ai_talk_idle_enabled" 1
+			"sb_vomit_blind_time" 0.1
+			"boomer_vomit_delay" 0.1
+			"z_vomit_fade_duration" 0.1
+			"z_vomit_fade_start" 0.1
+			"z_vomit_duration" 1
+			"z_vomit_interval" 0.1
+			"z_vomit_fatigue" 0.1
+			"z_vomit_range" 150
+			"z_exploding_splat_radius" 1
+			"z_exploding_health" 100
+			"z_exploding_speed" 350
+			"z_exploding_shove_max" 99
+			"z_exploding_shove_min" 99
+			"boomer_exposed_time_tolerance" 0.1
+			"boomer_pz_claw_dmg" 15
+			"z_wandering_density" 0
+			"z_scout_mob_spawn_range" 1000
+			"director_no_mobs" 1
+			"z_health" 100	
+			"z_spawn_mobs_behind_chance" 0
+		}
+	}
+
+	"community3" // riding my survivor
+	{
+		"base"		"versus"
+		"maxplayers"	"8"
+		"achievementindex"	"5"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"34"
+		"dlcmask"	"0x0000000000000002"
+		
+		convar
+		{
+			z_jockey_health 500
+			z_jockey_speed 450
+			z_jockey_ride_damage 10
+		}
+	}
+
+	"community4" // nightmare
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"35"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"z_hunter_health" 300
+			"z_charger_health" 300
+			"z_spitter_health" 300
+			"z_charger_allow_shove" 1
+			"director_no_mobs" 1
+			"z_special_spawn_interval" 10
+			"director_special_respawn_interval" 10
+			"director_special_initial_spawn_delay_min" 10
+			"director_special_initial_spawn_delay_max" 30
+			"sv_disable_glow_survivors" 1
+			"sv_disable_glow_faritems" 1
+			"intensity_decay_time" 15
+			"director_relax_max_interval" 20
+			"director_relax_min_interval" 10
+			"first_aid_heal_percent" 0.9
+			"pain_pills_health_value" 65
+			"pain_pills_decay_rate" 0.21
+			"director_scavenge_item_override" 1
+			"director_pain_pill_density" 7.48
+			"director_pipe_bomb_density" 7.48
+			"director_molotov_density" 7.48
+			"director_pistol_density" 6
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 242
+			"fog_end" 730
+			"fog_startskybox" -10000
+			"fog_endskybox" -10000
+			"fog_enableskybox" 1
+			"z_tank_health" 5000
+			"z_tank_throw_force" 1200
+			"z_tank_throw_health" 200
+		}
+	}
+
+	"community5" // death's door
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"36"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"survivor_max_incapacitated_count" 0
+		}
+	}
+
+	"community6" // confogl
+	{
+		"base"		"versus"
+		"maxplayers"	"8"
+		"achievementindex"	"5"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"37"
+		"dlcmask"	"0x0000000000000002"
+
+	         convar
+	        {
+            		"sv_infected_ceda_vomitjar_probability" 0
+            		"sv_infected_riot_control_tonfa_probability" 0
+            		"z_fallen_max_count" 0
+            		"gascan_spit_time" 2
+            		"z_mob_spawn_min_size" 25
+            		"z_mob_spawn_max_size" 25
+			"z_mob_spawn_min_interval_normal" 999999
+			"z_mob_spawn_max_interval_normal" 999999
+            		"ammo_shotgun_max" 80
+			"ammo_huntingrifle_max" 220
+            		"sv_force_time_of_day" 0
+            		"z_ghost_delay_min" 20
+            		"z_ghost_delay_max" 20
+            		"director_vs_convert_pills" 0
+            		"director_convert_pills" 0
+            		"director_convert_pills_critical_health" 0
+            		"director_convert_pills_to_defib_health" 0
+            		"versus_tank_chance" 1
+            		"versus_tank_chance_finale" 1
+            		"versus_tank_chance_intro" 1
+            		"versus_tank_flow_team_variation" 0
+            		"versus_witch_chance" 0.75
+            		"versus_witch_chance_finale" 0
+            		"versus_witch_chance_intro" 0
+            		"versus_boss_flow_max" 0.9
+            		"versus_boss_flow_max_intro" 0.9
+            		"versus_boss_flow_min" 0.15
+           	 	"versus_boss_flow_min_intro" 0.15
+            		"z_witch_damage_per_kill_hit" 75
+            		"z_witch_personal_space" 240
+            		"z_leap_interval_post_incap" 15
+            		"z_jockey_control_variance" 0.15
+            		"z_finale_spawn_safety_range" 150
+            		"z_gun_swing_vs_min_penalty" 1
+            
+            		// Mega mob size should be intact for 360. (25)
+            		"360_z_mob_spawn_min_size" 18
+            		"360_z_mob_spawn_max_size" 18
+        	}
+	}
+
+	"cmutation3" // Classic Campaign
+	{
+		"base"		"coop"
+		"maxplayers"	"4"
+		"x360ctx"	"0"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+		"x360presence:"
+		{
+			"network:offline"	"11"
+			"play:commentary"	"3"
+			"play:credits"		"2"
+		}
+		"hasdifficulty"		"1"
+		convar 
+		{
+			"ammo_shotgun_max" 128
+			"ammo_smg_max" 480
+			"ammo_assaultrifle_max" 360
+			"ammo_autoshotgun_max" 128
+			"ammo_huntingrifle_max" 180
+			"sv_infected_riot_control_tonfa_probability" 0
+			"sv_infected_ceda_vomitjar_probability" 0
+			"fog_2dskyboxfogfactor" -1
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 17317
+			"fog_end" -243
+			"fog_startskybox" -10000
+			"fog_color" 1 1 1
+			"fog_colorskybox" 1 1 1
+			"fog_endskybox" -10000
+			"fog_enableskybox" 1
+			"fog_maxdensity" -1
+			"fog_maxdensityskybox" -1
+			"fog_hdrcolorscale" -1
+			"fog_hdrcolorscaleskybox" -1
+			"witch_force_wander" 0
+			"z_female_boomer_spawn_chance" 100
+			"r_flashlightbrightness" 2.0
+			"z_gun_swing_coop_max_penalty" 999999999
+			"z_gun_swing_coop_min_penalty" 999999999
+		}
+	}
+
+	"cmutation7" // Last Survival On Earth
+	{
+		"base"		"survival"
+		"maxplayers"    "1"
+		"x360ctx"	"7"
+		"x360presence" 	"13"
+		"dlcmask"	"0x0000000000000002"
+		convar 
+		{
+			"z_jockey_ride_damage" 15
+			"z_pounce_damage" 10
+			"tongue_choke_damage_amount" 15
+			"tongue_drag_damage_amount" 15
+		}
+	}
+
+	"cmutation13" // BeserkeRAGE
+	{
+		"base"	 "coop"
+		"maxplayers"	"4"
+		"x360ctx"	"31"
+		"dlcmask"	"0x0000000000000002"
+		convar
+		{
+			"sb_melee_approach_victim" 1
+			"sv_infected_riot_control_tonfa_probability" 0
+			"sv_infected_ceda_vomitjar_probability" 0
+			"adrenaline_duration" 3600
+			"adrenaline_run_speed" 300
+			"adrenaline_health_buffer" 0
+			"r_flashlightfov" 0
+			"sb_max_battlestation_range_from_human" 250
+			"sb_max_team_melee_weapons" 4
+		}
+	}
+
+	"cmutation18" // Snipers Only
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"x360ctx"	"70"
+		"dlcmask"	"0x0000000000000002"
+		"hasdifficulty"		"1"
+		convar
+		{
+			"sb_enforce_proximity_range" 50
+			"sb_max_battlestation_range_from_human" 50
+			"sb_max_scavenge_separation" 130
+			"sb_neighbor_range" 50
+			"sb_separation_danger_max_range" 100
+			"sb_separation_danger_min_range" 50
+			"sb_separation_range" 100
+			"sb_threat_very_close_range" 4000
+			"sb_threat_close_range" 8000
+			"sb_close_threat_range" 8000
+			"sb_threat_medium_range" 12000
+			"sb_threat_far_range" 16000
+			"sb_threat_very_far_range" 20000
+			"shout_threat_range" 1000
+			"director_no_bosses" 1
+			"z_tank_health" 1
+			"z_witch_health" 1
+			"z_hunter_health" 200
+			"z_gas_health" 200
+			"z_smoker_health" 200
+			"z_common_limit" 0
+			"z_special_spawn_interval" 15
+			"director_special_respawn_interval" 15
+			"z_respawn_interval" 15
+			"director_special_initial_spawn_delay_max" 3
+			"director_special_initial_spawn_delay_min" 0
+		}
+	}
+
+	"cmutation26" // Ultra Realism
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"x360ctx"	"6"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+		"hasdifficulty"		"1"
+		convar 
+		{
+			"sv_disable_glow_survivors" 1
+			"sv_disable_glow_faritems" 1
+			"sv_rescue_disabled" 1
+			"z_non_head_damage_factor_multiplier" 0.5
+			"z_head_damage_causes_wounds" 1
+			"z_use_next_difficulty_damage_factor" 1
+			"z_witch_always_kills" 1
+			"z_difficulty" Impossible
+			"cl_drawhud" 0
+			"hidehud" 64
+			"sv_glowenable" 0
+			"sv_allow_votes" 0
+		}
+	}
+
+	"cmutation29" // Jimmy Gibbs Only !
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"x360ctx"	"3"
+		"x360matchrule"		"2"
+		"x360matchruleteam"	"3"
+		"x360presence"		"9"
+
+		"singlechapter"		"1"
+
+		convar
+		{ 
+			"z_forcezombiemodelname" common_male_jimmy
+			"z_forcezombiemodel" 1
+		}
+	}
+
+	"cmutation30" // Classic Survival
+	{
+		"base"		"survival"
+		"maxplayers"	"4"
+		"x360ctx"	"0"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+		"x360presence:"
+		{
+			"network:offline"	"11"
+			"play:commentary"	"3"
+			"play:credits"		"2"
+		}
+		"hasdifficulty"		"1"
+		convar 
+		{
+			"ammo_shotgun_max" 128
+			"ammo_smg_max" 480
+			"ammo_assaultrifle_max" 360
+			"ammo_autoshotgun_max" 128
+			"ammo_huntingrifle_max" 180
+			"sv_infected_riot_control_tonfa_probability" 0
+			"sv_infected_ceda_vomitjar_probability" 0
+			"fog_2dskyboxfogfactor" -1
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 17317
+			"fog_end" -243
+			"fog_startskybox" -10000
+			"fog_color" 1 1 1
+			"fog_colorskybox" 1 1 1
+			"fog_endskybox" -10000
+			"fog_enableskybox" 1
+			"fog_maxdensity" -1
+			"fog_maxdensityskybox" -1
+			"fog_hdrcolorscale" -1
+			"fog_hdrcolorscaleskybox" -1
+			"witch_force_wander" 0
+			"z_female_boomer_spawn_chance" 100
+			"r_flashlightbrightness" 2.0
+		}
+	}
+
+	"cmutation31" // Last Duo On Earth
+	{
+		"base"	"versus"
+		"maxplayers"	"4"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"19"
+		"dlcmask"	"0x0000000000000002"
+		
+		convar
+		{
+			"z_jockey_ride_damage" 15
+			"z_pounce_damage" 10
+			"tongue_choke_damage_amount" 15
+			"tongue_drag_damage_amount" 15
+			"sb_all_bot_team" 1
+			"sb_all_bot_game" 1
+			"allow_all_bot_survivor_team" 1
+			"maxplayers" 4
+			"survivor_limit" 2
+			"z_versus_boomer_limit" 0
+			"z_max_player_zombies" 2
+		}
+	}
+	
+	"cmutation38" // Limited Resources
+	{
+		"base" "coop"
+		"maxplayers"    "4"
+		"x360ctx"	"3"
+		"x360matchrule"		"2"
+		"x360matchruleteam"	"3"
+		"x360presence"		"9"
+		convar 
+		{
+			"ammo_shotgun_max" 10
+			"ammo_autoshotgun_max" 10
+			"ammo_huntingrifle_max" 15
+			"ammo_sniperrifle_max" 30
+			"ammo_smg_max" 50
+			"ammo_grenadelauncher_max" 5
+			"survivor_revive_duration" 1
+			"survivor_revive_health" 100
+			"ammo_assaultrifle_max" 60
+			"ammo_m60_max" 400
+		}
+	}
+
+	"cmutation55" // Classic Versus
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	// versus
+		"x360ctx"	"1"
+		"x360matchrule"		"1"
+		"x360matchruleteam"	"3"
+		"x360presence"		"7"
+
+		"playercontrolledzombies"	"1"
+		convar 
+		{
+			"ammo_shotgun_max" 128
+			"ammo_smg_max" 480
+			"ammo_assaultrifle_max" 360
+			"ammo_autoshotgun_max" 128
+			"ammo_huntingrifle_max" 180
+			"sv_infected_riot_control_tonfa_probability" 0
+			"sv_infected_ceda_vomitjar_probability" 0
+			"fog_2dskyboxfogfactor" -1
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 17317
+			"fog_end" -243
+			"fog_startskybox" -10000
+			"fog_color" 1 1 1
+			"fog_colorskybox" 1 1 1
+			"fog_endskybox" -10000
+			"fog_enableskybox" 1
+			"fog_maxdensity" -1
+			"fog_maxdensityskybox" -1
+			"fog_hdrcolorscale" -1
+			"fog_hdrcolorscaleskybox" -1
+			"witch_force_wander" 0
+			"z_female_boomer_spawn_chance" 100
+			"r_flashlightbrightness" 2.0
+			"z_versus_boomer_limit" 1
+			"z_versus_charger_limit" 0
+			"z_versus_hunter_limit" 3
+			"z_versus_jockey_limit" 0
+			"z_versus_smoker_limit" 2
+			"z_versus_spitter_limit" 0
+			"z_boomer_limit" 1
+			"z_charger_limit" 0
+			"z_hunter_limit" 3
+			"z_jockey_limit" 0
+			"z_smoker_limit" 2
+			"z_spitter_limit" 0
+		}
+	}
+
+	"cmutation97" // Crouch Sprinters
+	{
+		"base"		"coop"
+		"maxplayers"	"4"
+		"x360ctx"	"40"
+		"dlcmask"	"0x0000000000000002"
+		convar
+		{
+			"survivor_crouch_speed" 90000
+		}
+	}
+
+	"cmutationlast" // Lights Out
+	{
+		"base"		"Realism"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"0"
+		"x360matchrule"		"0"
+		"x360presence"		"5"
+		"x360presence:"
+		{
+			"network:offline"	"11"
+			"play:commentary"	"3"
+			"play:credits"		"2"
+		}
+		"hasdifficulty"		"1"
+		convar 
+		{
+			"r_flashlightfov" 0
+			"fog_2dskyboxfogfactor" 1
+			"fog_color" 0 0 0
+			"fog_colorskybox" 0 0 0
+			"fog_enable" 1
+			"fog_enable_water_fog" 1
+			"fog_enableskybox" 1
+			"fog_end" 23658
+			"fog_endskybox" -10000 
+			"fog_maxdensityskybox" 400
+			"fog_override" 1
+			"fog_start" 26585 
+			"fog_startskybox" -10000 
+			"fog_maxdensity" 0.91
+			"r_flashlightconstant" -0.3
+		}
+	}
+
+	"spitters"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"director_no_bosses" 1
+			"z_tank_health" 1
+			"z_witch_health" 1
+			"director_no_specials" 0
+			"z_spitter_limit" 20
+			"spitter_pz_claw_damage" 20
+			"z_spitter_health" 100
+			"z_special_spawn_interval" 8
+			"director_special_respawn_interval" 8
+			"z_respawn_interval" 8
+			"director_special_initial_spawn_delay_max" 2
+			"director_special_initial_spawn_delay_min" 1
+			"z_spawn_mobs_behind_chance" 0
+		}
+	}
+
+	"nightmare"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		"hasdifficulty"		"1"
+
+		convar 
+		{
+			"z_common_limit" 0
+			"z_hunter_limit" 6
+			"z_charger_limit" 6
+			"z_spitter_limit" 6
+			"z_smoker_limit" 4
+			"z_boomer_limit" 1
+			"z_jockey_limit" 2
+			"z_hunter_health" 300
+			"z_charger_health" 300
+			"z_spitter_health" 300
+			"z_charger_allow_shove" 1
+			"director_no_mobs" 1
+			"z_spawn_flow_limit" 500
+			"z_special_spawn_interval" 10
+			"director_special_respawn_interval" 10
+			"director_special_initial_spawn_delay_min" 10
+			"director_special_initial_spawn_delay_max" 30
+			"cl_glow_blur_scale" 0
+			"intensity_decay_time" 15
+			"director_relax_max_interval" 20
+			"director_relax_min_interval" 10
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 240
+			"fog_end" 730
+			"fog_startskybox" -10000
+			"fog_endskybox" -10000
+			"fog_enableskybox" 1
+			"z_tank_walk_speed" 100
+			"z_tank_health" 5000
+			"z_tank_throw_force" 1200
+			"z_tank_throw_health" 200
+		}
+	}
+
+	"snipefest"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"sb_enforce_proximity_range" 50
+			"sb_max_battlestation_range_from_human" 50
+			"sb_max_scavenge_separation" 130
+			"sb_neighbor_range" 50
+			"sb_separation_danger_max_range" 100
+			"sb_separation_danger_min_range" 50
+			"sb_separation_range" 100
+			"sb_threat_very_close_range" 4000
+			"sb_threat_close_range" 8000
+			"sb_close_threat_range" 8000
+			"sb_threat_medium_range" 12000
+			"sb_threat_far_range" 16000
+			"sb_threat_very_far_range" 20000
+			"shout_threat_range" 1000
+			"director_no_bosses" 1
+			"z_tank_health" 1
+			"z_witch_health" 1
+			"director_no_specials" 0
+			"z_smoker_limit" 4
+			"z_hunter_limit" 4
+			"z_hunter_health" 200
+			"z_gas_health" 200
+			"z_smoker_health" 200
+			"z_common_limit" 0
+			"z_special_spawn_interval" 15
+			"director_special_respawn_interval" 15
+			"z_respawn_interval" 15
+			"director_special_initial_spawn_delay_max" 3
+			"director_special_initial_spawn_delay_min" 0
+			"survivor_respawn_with_guns" 2
+		}
+
+	}
+
+	"chainsawrealism"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"z_wandering_density" 0.09
+			"sv_disable_glow_survivors" 1
+			"sv_disable_glow_faritems" 1
+			"sv_rescue_disabled" 1
+			"z_non_head_damage_factor_multiplier" 0.5
+			"z_head_damage_causes_wounds" 1
+			"z_use_next_difficulty_damage_factor" 1
+			"z_witch_always_kills" 0
+		}
+	}
+	
+	"singleplayerrealism"
+	{
+		"base"		"realism"
+		"maxplayers"    "1"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"sv_disable_glow_survivors" 1
+			"sv_disable_glow_faritems" 1
+			"sv_rescue_disabled" 1
+			"z_non_head_damage_factor_multiplier" 0.5
+			"z_head_damage_causes_wounds" 1
+			"z_use_next_difficulty_damage_factor" 1
+			"z_witch_always_kills" 0
+			sv_pausable 1
+		}
+	}
+
+	"fullycharged"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+
+			"z_charger_limit" 12
+			"z_charger_health" 125 // KJ default 300
+			"z_special_spawn_interval" 0
+			"director_special_respawn_interval" 0
+			"z_respawn_interval" 0
+			"director_special_initial_spawn_delay_max" 0
+			"director_special_initial_spawn_delay_min" 0
+		}
+	}
+
+	"jockeys"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"z_smoker_limit" 0
+			"z_hunter_limit" 0
+			"z_spitter_limit" 0
+			"z_charger_limit" 0
+			"z_jockey_limit" 20
+			"z_boomer_limit" 0
+			"z_jockey_health" 200
+			"z_special_spawn_interval" 0
+			"director_special_respawn_interval" 0
+			"z_respawn_interval" 0
+			"director_special_initial_spawn_delay_max" 0
+			"director_special_initial_spawn_delay_min" 0
+			"z_jockey_speed" 999
+		}
+	}
+
+	"pitchblack"
+	{
+		"base"		"coop"
+		"maxplayers"    "1"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"z_common_limit" 0
+			"z_hunter_limit" 6
+			"z_hunter_health" 100
+			"director_no_mobs" 1
+			"snd_musicvolume" 0
+			"z_spawn_flow_limit" 500
+			"z_special_spawn_interval" 10
+			"director_special_respawn_interval" 10
+			"director_special_initial_spawn_delay_min" 10
+			"director_special_initial_spawn_delay_max" 30
+			"cl_glow_blur_scale" 0
+			"intensity_decay_time" 15
+			"director_relax_max_interval" 20
+			"director_relax_min_interval" 10
+			"first_aid_heal_percent" 0.9
+			"pain_pills_health_value" 65
+			"pain_pills_decay_rate" 0.21
+			"director_scavenge_item_override" 1
+			"director_pain_pill_density" 7.48
+			"director_pipe_bomb_density" 7.48
+			"director_molotov_density" 7.48
+			"director_pistol_density" 6
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 0
+			"fog_end" 300
+			"fog_startskybox" -10000
+			"fog_color" 1 1 1
+			"fog_colorskybox" 1 1 1
+			"fog_endskybox" -10000
+			"fog_enableskybox" 1
+			"music_manager" 0
+			"r_flashlightbrightness" 1.5
+			sv_pausable 1
+		}
+	}
+
+	"pitchblackcoop"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"z_common_limit" 0
+			"z_hunter_limit" 10
+			"z_hunter_health" 100
+			"director_no_mobs" 1
+			"snd_musicvolume" 0
+			"z_spawn_flow_limit" 500
+			"z_special_spawn_interval" 10
+			"director_special_respawn_interval" 10
+			"director_special_initial_spawn_delay_min" 10
+			"director_special_initial_spawn_delay_max" 30
+			"cl_glow_blur_scale" 0
+			"intensity_decay_time" 15
+			"director_relax_max_interval" 20
+			"director_relax_min_interval" 10
+			"first_aid_heal_percent" 0.9
+			"pain_pills_health_value" 65
+			"pain_pills_decay_rate" 0.21
+			"director_scavenge_item_override" 1
+			"director_pain_pill_density" 7.48
+			"director_pipe_bomb_density" 7.48
+			"director_molotov_density" 7.48
+			"director_pistol_density" 6
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 0
+			"fog_end" 300
+			"fog_startskybox" -10000
+			"fog_color" 1 1 1
+			"fog_colorskybox" 1 1 1
+			"fog_endskybox" -10000
+			"fog_enableskybox" 1
+			"music_manager" 0
+			"r_flashlightbrightness" 1.5
+		}
+	}
+
+	"silentbutdeadly"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"music_manager" 0
+			"snd_music_volume" 0
+			"z_mute_infected" 1
+		}
+	}
+
+	"crowdcontrol"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"survivor_max_incapacitated_count" 0
+			"ammo_autoshotgun_max" 99999
+			"ammo_shotgun_max" 99999
+		}
+	}
+
+	"blind"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"nb_blind" 1
+			"z_health" 100
+			"z_speed" 300
+			"director_allways_allow_wanderers" 1
+			"z_hear_gunfire_range" 2000
+			"z_hear_runner_far_range" 2000
+			"z_hear_runner_near_range" 2000
+			"z_close_target_notice_distance" 240
+			"z_witch_always_kills" 1
+			"z_non_head_damage_factor_multiplier" 0.5
+			"z_head_damage_causes_wounds" 1
+			"z_use_next_difficulty_damage_factor" 0
+			"z_mega_mob_size" 10
+			"z_mob_spawn_max_size" 10
+			"z_mob_spawn_min_size" 10
+			"z_mob_spawn_finale_size" 10
+		}
+	}
+
+	"cheats"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"1000"
+		"x360ctx"	"1000"
+		"dlcmask"	"0x0000000000000002"
+
+		"playercontrolledzombies"	"1"
+
+		convar 
+		{
+		"sv_cheats" 1
+		"vs_max_team_switches" 99
+		}
+	}
+
+	"master"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+		"hasdifficulty"		"0"
+	}
+
+	"disability"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"sv_disable_glow_survivors" 1
+			"sv_disable_glow_faritems" 1
+			"sv_rescue_disabled" 1
+			"z_allow_ai_to_use_abilities" 0
+			"z_hunter_health" 300
+			"z_gas_health" 300
+			"z_gas_speed" 250
+			"z_exploding_health" 200
+			"z_boomer_speed" 210
+			"z_charger_health" 500
+			"z_spitter_health" 200
+			"z_spitter_speed" 210
+			"z_jockey_health" 300
+		}
+	}
+
+	"nightmare2"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"sv_disable_glow_survivors" 1
+			"sv_disable_glow_faritems" 1
+			"z_witch_always_kills" 1
+			"sv_rescue_disabled" 1
+			"fog_override" 1
+			"fog_start" 0
+			"fog_end" 2000
+			"music_manager" 0
+			"snd_music_volume" 0
+			"cl_glow_blur_scale" 0
+			"survivor_friendly_fire_factor_expert" 10 
+			"survivor_friendly_fire_factor_hard" 5
+			"survivor_friendly_fire_factor_normal" 2
+			"survivor_friendly_fire_factor_easy" 1
+			"survivor_burn_factor_expert" 10
+			"survivor_burn_factor_hard" 5
+			"survivor_burn_factor_normal" 2
+			"survivor_burn_factor_easy" 1
+			"z_witch_speed" 250
+			"z_witch_health" 2000
+			"z_witch_speed_inured" 250
+			"z_witch_threat_hostile_range" 500
+			"z_witch_threat_normal_range" 500
+			"z_witch_discard_range" 5000
+			"z_witch_flashlight_range" 500
+			"z_witch_personal_space" 500
+			"z_witch_anger_rate" 0.3
+			"z_witch_relax_rate" 0.03
+			"z_witch_burn_time" 30
+			"cl_witch_light_color_b" 0
+			"cl_witch_light_color_g" 0
+			"cl_witch_light_color_r" 0
+			"z_tank_walk_speed" 200
+			"z_tank_health" 10000
+			"z_tank_throw_force" 1000
+			"z_tank_throw_health" 100
+			"z_hunter_health" 100
+			"z_gas_health" 100
+			"z_exploding_health" 100
+			"hunter_pounce_air_speed" 1500
+			"tongue_range" 1500
+			"z_vomit_fade_duration" 30
+			"z_vomit_fade_start" 30
+			"r_flashlightbrightness" 0.1
+		}
+	}
+
+	"closequarters"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"sv_disable_glow_survivors" 1
+			"sv_disable_glow_faritems" 1
+			"sv_rescue_disabled" 1
+			"z_non_head_damage_factor_multiplier" 0.5
+			"z_head_damage_causes_wounds" 1
+			"z_use_next_difficulty_damage_factor" 1
+			"z_witch_always_kills" 1
+			"z_allow_ai_to_use_abilities" 0
+			"z_exploding_health" 666
+			"z_spitter_health" 666
+		}
+	}
+
+	"guitarhero"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"melee_force_scalar" 9999
+			"melee_range" 150
+			"melee_combo_reset_time" 0
+		}
+	}
+
+	"greenflu"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 0
+			"fog_end" 300
+			"fog_startskybox" -10000
+			"fog_color" 20 50 10
+			"fog_colorskybox" 20 50 10
+			"fog_endskybox" -10000
+			"z_boomer_limit" 2
+			"z_spitter_limit" 2
+			"z_smoker_limit" 1
+		}
+	}
+
+	"hell"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 0
+			"fog_end" 500
+			"fog_startskybox" -10000
+			"fog_color" 100 10 1
+			"fog_colorskybox" 100 20 1
+			"fog_endskybox" -10000
+			"z_hunter_limit" 2
+			"z_charger_limit" 2
+			"z_smoker_limit" 2
+			"z_jockey_limit" 2
+		}
+	}
+
+	"whiteout"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 0
+			"fog_end" 500
+			"fog_startskybox" -10000
+			"fog_color" 100 100 100
+			"fog_colorskybox" 200 200 200
+			"fog_endskybox" -10000
+			"z_charger_limit" 1
+			"z_smoker_limit" 2
+			"z_jockey_limit" 2
+			"tongue_range" 2000
+		}
+	}
+
+	"bleedoutscavenge"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}
+	}
+
+	"healinggnomeversus"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+			"sv_healing_gnome_replenish_rate" 1.75
+		}
+	}
+
+	"healinggnomesurvival"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+		convar
+		{
+			"sv_healing_gnome_replenish_rate" 2.0
+		}
+		
+	}
+
+	"healinggnomescavenge"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+			"sv_healing_gnome_replenish_rate" 2.0
+		}
+	}
+
+	"bleedoutsurvival"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+	}
+
+	"four"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			"melee_force_scalar" 9999
+			"melee_range" 150
+			"melee_combo_reset_time" 0
+		}
+	}
+
+	"huntersversus" 
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+
+		convar
+		{
+			"vs_max_team_switches" 99
+		}
+
+	}
+
+	"pillshere"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+	}
+
+	"adrenalinerush"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"adrenaline_duration" 9999
+			"adrenaline_health_buffer" 50
+			"adrenaline_run_speed" 300
+		}
+	}
+
+	"chargersversus"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"vs_max_team_switches" 99
+		}
+
+	}
+
+	"jockeysversus" 
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"vs_max_team_switches" 99
+		}
+
+	}
+
+	"smokersversus" 
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"vs_max_team_switches" 99
+		}
+
+	}
+
+	"boomersversus" 
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"vs_max_team_switches" 99
+		}
+
+	}
+
+	"survivorsareop"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"vs_max_team_switches" 99
+			"melee_force_scalar" 1000
+			"melee_range" 100
+			"melee_combo_reset_time" 0
+			"sv_alltalk" 0
+		}
+	}
+
+	"commonproblems"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {						
+			"director_no_specials" 1
+			"director_no_bosses" 1
+			z_mega_mob_size 50
+			z_mob_spawn_min_size 25
+			z_mob_spawn_max_size 50
+			z_mob_spawn_finale_size 50
+			z_mob_spawn_max_interval_easy 30
+			z_mob_spawn_max_interval_expert 30
+			z_mob_spawn_max_interval_hard 30
+			z_mob_spawn_max_interval_normal 30
+			z_mob_spawn_min_interval_easy 30
+			z_mob_spawn_min_interval_expert 30
+			z_mob_spawn_min_interval_hard 30
+			z_mob_spawn_min_interval_normal 30
+		}
+	}
+
+	"commonproblemshc"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {						
+			"director_no_specials" 1
+			"director_no_bosses" 1
+			vomitjar_duration_survivor 20
+			vomitjar_radius_survivors 110
+			z_mega_mob_size 50
+			z_mob_spawn_min_size 25
+			z_mob_spawn_max_size 50
+			z_mob_spawn_finale_size 50
+			z_mob_spawn_max_interval_easy 30
+			z_mob_spawn_max_interval_expert 30
+			z_mob_spawn_max_interval_hard 30
+			z_mob_spawn_max_interval_normal 30
+			z_mob_spawn_min_interval_easy 30
+			z_mob_spawn_min_interval_expert 30
+			z_mob_spawn_min_interval_hard 30
+			z_mob_spawn_min_interval_normal 30
+			hidehud 64
+			cl_drawhud 0
+		}
+	}
+
+	"scavengecoop"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "4"	// scavenge
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			z_common_limit 100
+			z_mega_mob_size 50
+			z_mob_spawn_min_size 25
+			z_mob_spawn_max_size 50
+			z_respawn_interval 0
+			z_mob_spawn_max_interval_easy 25
+			z_mob_spawn_max_interval_expert 25
+			z_mob_spawn_max_interval_hard 25
+			z_mob_spawn_max_interval_normal 25
+			z_mob_spawn_min_interval_easy 25
+			z_mob_spawn_min_interval_expert 25
+			z_mob_spawn_min_interval_hard 25
+			z_mob_spawn_min_interval_normal 25
+			
+		}
+		
+	}	
+
+	"realismsurvival"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"	// survival
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		// set base gamemode convars first, then the current gamemode
+		convar {
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1			
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+		}
+	}
+
+	"realismscavenge"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		// set base gamemode convars first, then the current gamemode
+		convar
+		{
+			"z_scrimmage_creep_delay" 0
+			"z_scrimmage_creep_rate" 100
+			"z_spawn_safety_range" 200
+			"tongue_miss_delay" 3
+			"tongue_hit_delay" 15
+			"tongue_dropping_to_ground_time" 0.5
+			"tongue_los_forgiveness_time" 1.5
+			"tongue_no_progress_choke_early_delay" 1.0
+			"z_pounce_stumble_radius" 160
+			"z_pounce_damage_interrupt" 150
+			"z_hunter_limit" 2
+			"z_smoker_limit" 2
+			"z_max_stagger_duration" 0.9
+			"sv_alltalk" 0
+			"z_ghost_los_expected_progress" 2000
+			"tongue_choke_damage_amount" 5
+			"tongue_break_from_damage_amount" 300
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1			
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1			
+		}
+	}
+
+	"specialdelivery"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			car_alarm_chirp_distance 0
+			car_alarm_distance 0
+			hud_deathnotice_threats 1
+			z_boomer_gibs 1
+		}
+	}
+
+	"specialdelivery2"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			car_alarm_chirp_distance 0
+			car_alarm_distance 0
+			hud_deathnotice_threats 1
+			z_boomer_gibs 1
+		}
+	}
+
+	"madness"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		// set base gamemode convars first, then the current gamemode
+		convar
+		{			
+			z_speed 200
+			z_spawn_mobs_behind_chance 33
+			z_mob_spawn_min_size 50
+			z_mob_spawn_max_size 80
+			z_mob_population_density 4
+			z_spawn_speed 80
+			z_common_limit 90
+			z_mega_mob_size 90
+			z_mob_spawn_min_interval_normal 1
+			z_mob_spawn_max_interval_normal 3
+			z_max_blood_scale 10
+			director_no_bosses 1
+			director_no_specials 1
+			z_respawn_interval 1
+			director_panic_forever 1
+			z_attack_incapacitated_damage 500
+			r_raindensity 20
+			director_scavenge_item_override 1 //added to read density commands
+			director_adrenaline_density 0
+			director_ammo_density 12
+			director_defibrillator_density 12
+			director_melee_weapon_density 24
+			director_molotov_density 0
+			director_pain_pill_density 12
+			director_pipe_bomb_density 0
+			director_pistol_density 2
+			director_super_weapon_density 1
+			director_upgradepack_density 0
+			director_vomitjar_density 0
+			sb_max_team_melee_weapons 4			
+		}
+	}
+
+	"hordes"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"	// survival
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			survival_tank_stage_interval 9999999999999999
+			survival_horde_stage_interval_decay 30
+		}
+	}
+
+	"boomershooter"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sv_tags boomershooter 
+
+			sb_enforce_proximity_range 50
+			sb_max_battlestation_range_from_human 50
+			sb_max_scavenge_separation 130
+			sb_max_team_melee_weapons 1
+			sb_vomit_blind_time 0.1
+			sb_neighbor_range 50
+			sb_separation_danger_max_range 100
+			sb_separation_danger_min_range 50
+			sb_separation_range 100
+			sb_threat_very_close_range 4000
+			sb_threat_close_range 8000
+			sb_close_threat_range 8000
+			sb_threat_medium_range 12000
+			sb_threat_far_range 16000
+			sb_threat_very_far_range 20000
+			shout_threat_range 1000
+
+			director_no_bosses 1
+			z_tank_health 1
+			z_witch_health 1
+
+			director_no_specials 0
+			z_smoker_limit 0
+			z_hunter_limit 0
+			z_spitter_limit 0
+			z_charger_limit 0
+			z_jockey_limit 0
+
+			boomer_vomit_delay 0.1
+			z_vomit_fade_duration 0.1
+			z_vomit_fade_start 0.1
+			z_vomit_duration 1
+			z_vomit_interval 0.1
+			z_vomit_fatigue 0.1
+			z_vomit_range 150
+			z_exploding_splat_radius 1
+
+			z_exploding_health 100
+			z_exploding_speed 300
+			z_exploding_shove_max 99
+			z_exploding_shove_min 99
+			boomer_exposed_time_tolerance 0.1
+			boomer_pz_claw_dmg 15
+
+			z_special_spawn_interval 8
+			director_special_respawn_interval 8
+			z_respawn_interval 8
+			director_special_initial_spawn_delay_max 2
+			director_special_initial_spawn_delay_min 1
+
+			// z_gun_swing_interval 2
+
+			z_wandering_density 0
+			z_scout_mob_spawn_range 1000
+			z_mob_spawn_min_size 50
+			z_mob_spawn_max_size 50
+			z_mob_spawn_min_interval_expert 99999
+			z_mob_spawn_max_interval_expert 99999
+			z_mob_spawn_min_interval_easy 99999
+			z_mob_spawn_max_interval_easy 99999
+			z_mob_spawn_min_interval_hard 99999
+			z_mob_spawn_max_interval_hard 99999
+			z_mob_spawn_min_interval_normal 99999
+			z_mob_spawn_max_interval_normal 99999
+			z_mega_mob_spawn_min_interval 99999
+			z_mega_mob_spawn_max_interval 99999
+			z_mega_mob_size 50
+			z_common_limit 50 
+			z_health 100	
+			z_spawn_mobs_behind_chance 0
+		}
+	}
+
+	"onemanarmy"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		convar
+		{
+			z_tank_health 1
+			z_witch_health 1
+			z_difficulty Impossible
+			survivor_revive_health 45
+			//tongue_start_pull_delay 3
+			//tongue_break_from_damage_amount 1
+			//tongue_health 1
+			z_spit_latency 0.1
+			tongue_no_progress_choke_early_delay 3
+			sv_pausable 1
+		}
+	}
+
+	"versuscoop"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+		}		
+	}
+
+	"boomertraining"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			director_allow_infected_bots 0
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+		}		
+	}
+
+	"huntertraining"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			director_allow_infected_bots 0
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+		}		
+	}
+
+	"smokertraining"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			director_allow_infected_bots 0
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+		}		
+	}
+
+	"chargertraining"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			director_allow_infected_bots 0
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+		}		
+	}
+
+	"jockeytraining"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			director_allow_infected_bots 0
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+		}		
+	}
+
+	"spittertraining"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			director_allow_infected_bots 0
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+		}		
+	}
+
+	"tanktraining"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			director_allow_infected_bots 0
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+			z_frustration 0
+		}		
+	}
+
+	"infestation"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			z_allow_ai_to_use_abilities 0
+			z_smoker_limit 0
+			z_hunter_limit 15
+			z_spitter_limit 0
+			z_charger_limit 0
+			z_jockey_limit 0
+			z_boomer_limit 0
+			z_hunter_health 110
+			z_special_spawn_interval 0
+			director_special_respawn_interval 0
+			z_respawn_interval 0
+			director_special_initial_spawn_delay_max 0
+			director_special_initial_spawn_delay_min 0
+			z_hunter_speed 30
+			claw_range 36
+			survivor_revive_duration 4
+			first_aid_kit_use_duration 3
+			survivor_revive_health 50
+		}
+	}
+
+	"deathsdoor"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+		"hasdifficulty"		"1"
+		convar
+		{
+			survivor_max_incapacitated_count 0
+		}
+	}
+
+	"realismvscoop"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+			"director_special_initial_spawn_delay_min" 2
+			"director_special_initial_spawn_delay_max" 10
+		}		
+	}
+
+	"bleedoutvscoop"
+	{
+		"base"		"versus"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			pain_pills_decay_rate 0.27
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+		}
+	}
+
+	"riotcontrol"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			"sv_infinite_primary_ammo" 1
+			"z_forcezombiemodelname" common_male_riot
+			"z_forcezombiemodel" 1
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			z_mob_spawn_min_size 50
+			z_mob_spawn_max_size 60
+			z_speed 350
+			z_alert_range 9000
+			z_mob_spawn_max_interval_easy 30
+			z_mob_spawn_max_interval_expert 30
+			z_mob_spawn_max_interval_hard 30
+			z_mob_spawn_max_interval_normal 30
+			z_mob_spawn_min_interval_easy 30
+			z_mob_spawn_min_interval_expert 30
+			z_mob_spawn_min_interval_hard 30
+			z_mob_spawn_min_interval_normal 30
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_respawn_with_guns 2
+		}
+	}
+
+	"coulrophobia"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infected_riot_control_tonfa_probability 0
+			"z_forcezombiemodelname" common_male_clown
+			"z_forcezombiemodel" 1
+			z_mob_spawn_min_size 30
+			z_mob_spawn_max_size 40
+		}
+	}
+
+	"uncommonground"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			"z_forcezombiemodelname" uncommon
+			"z_forcezombiemodel" 1
+			sv_infected_riot_control_tonfa_probability 0
+			z_fallen_kill_suppress_time 60
+			z_fallen_max_count 3
+			z_mob_spawn_min_size 30
+			z_mob_spawn_max_size 40
+		}
+	}
+
+	"uncommongroundsv"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			"z_forcezombiemodelname" uncommon
+			"z_forcezombiemodel" 1
+			sv_infected_riot_control_tonfa_probability 0
+			z_fallen_kill_suppress_time 60
+			z_fallen_max_count 3
+			z_mob_spawn_min_size 30
+			z_mob_spawn_max_size 40
+		}
+	}
+
+	"dirtnap"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			"z_forcezombiemodelname" common_male_mud
+			"z_forcezombiemodel" 1
+			z_mob_spawn_min_size 30
+			z_mob_spawn_max_size 35
+		}
+	}
+
+
+	"deconstruction"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			"z_forcezombiemodelname" common_male_roadcrew
+			"z_forcezombiemodel" 1
+			z_mob_spawn_min_size 35
+			z_mob_spawn_max_size 45
+			z_mob_spawn_max_interval_easy 220
+			z_mob_spawn_max_interval_expert 160
+			z_mob_spawn_max_interval_hard 160
+			z_mob_spawn_max_interval_normal 160
+			z_mob_spawn_min_interval_easy 100
+			z_mob_spawn_min_interval_expert 70
+			z_mob_spawn_min_interval_hard 70
+			z_mob_spawn_min_interval_normal 70
+		}
+	}
+
+
+	"biohazard"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			"z_forcezombiemodelname" common_male_ceda
+			"z_forcezombiemodel" 1
+			z_mob_spawn_min_size 30
+			z_mob_spawn_max_size 40
+		}
+	}
+
+	"jimpocalypse"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			"z_forcezombiemodelname" common_male_jimmy
+			"z_forcezombiemodel" 1
+			z_mob_spawn_min_size 50
+			z_mob_spawn_max_size 60
+			sv_infinite_ammo 1
+			z_mob_spawn_max_interval_easy 40
+			z_mob_spawn_max_interval_expert 40
+			z_mob_spawn_max_interval_hard 40
+			z_mob_spawn_max_interval_normal 40
+			z_mob_spawn_min_interval_easy 40
+			z_mob_spawn_min_interval_expert 40
+			z_mob_spawn_min_interval_hard 40
+			z_mob_spawn_min_interval_normal 40
+			z_speed 350
+		}
+	}
+
+	"onslaught"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"sv_infinite_primary_ammo" 1
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	}
+
+	"blastzone"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sb_melee_approach_victim 1
+			sv_infected_riot_control_tonfa_probability 0
+			"sv_infinite_primary_ammo" 1
+			z_exploding_speed 300
+			z_vomit_fade_duration 15
+			z_vomit_fade_start 15
+			z_tank_health 8000
+			tongue_range 1125
+			tongue_choke_damage_amount 15
+			survivor_respawn_with_guns 2
+		}
+	}
+
+	"specialdeliveryvs"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			car_alarm_chirp_distance 0
+			car_alarm_distance 0
+			hud_deathnotice_threats 1
+			z_boomer_gibs 1
+			versus_special_respawn_interval 0
+		}
+	}
+
+	"specialdeliverysv"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			//car_alarm_chirp_distance 0
+			//car_alarm_distance 0
+			hud_deathnotice_threats 1
+			survival_special_spawn_interval 10
+			survival_special_stage_interval 10
+			z_boomer_gibs 1
+		}
+	}
+
+	"realismapocalypse"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"sv_tags" Realism Apocalypse
+			"z_mega_mob_size" 10
+			"z_mob_spawn_max_size" 15
+			"director_configurable_weapon_spawn_density" : 1.75
+			"sv_disable_glow_survivors" 1
+			"sv_disable_glow_faritems" 1
+			"sv_rescue_disabled" 1
+			"z_non_head_damage_factor_multiplier" 0.07
+			"z_head_damage_causes_wounds" 1
+			"z_use_next_difficulty_damage_factor" 1
+			"z_witch_always_kills" 1
+			"spawn_behind_survivors_distance" 500
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 100
+			"fog_end" 1500
+			"fog_startskybox" 1500
+			"fog_color" 1 1 1
+			"fog_colorskybox" 1 1 1
+			"fog_endskybox" 2000
+			"fog_enableskybox" 1
+			"music_manager" 0
+			"r_flashlightbrightness" 5
+			"pain_pills_decay_rate" 0.21
+			"z_spawn_mobs_behind_chance" 5
+			"z_mob_population_density" 0.05
+			"director_pain_pill_density" 0.15
+			"director_first_aid_kit_density" 0.15
+			"ammo_shotgun_max" 10
+			"ammo_autoshotgun_max" 10
+			"ammo_huntingrifle_max" 15
+			"ammo_sniperrifle_max" 30
+			"ammo_smg_max" 50
+			"ammo_grenadelauncher_max" 5
+			"ammo_assaultrifle_max" 60
+			"ammo_m60_max" 150
+			"z_max_blood_scale" 50
+			"survivor_friendly_fire_factor_expert" 0.35 
+			"survivor_friendly_fire_factor_hard" 0.3
+			"survivor_friendly_fire_factor_normal" 0.2
+			"survivor_friendly_fire_factor_easy" 0
+			"survivor_burn_factor_expert" 0.8
+			"survivor_burn_factor_hard" 0.65
+			"survivor_burn_factor_normal" 0.45
+			"survivor_burn_factor_easy" 0.25
+			"z_exploding_speed" 600
+			"z_fallen_max_count" 500
+			"survivor_ledge_grab_health" 100
+			"z_common_health_easy" 100
+			"z_common_health_normal" 150
+			"z_common_health_hard" 200
+			"z_common_health_expert" 250
+		}
+	}
+
+	"horror42"
+	{
+		"base"		"coop"
+		"maxplayers"    "2"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_infected_riot_control_tonfa_probability 0
+			ammo_shotgun_max 30
+			ammo_grenadelauncher_max 5
+			survivor_limit 2
+			sv_pausable 1
+		}
+	}
+
+	"tankbusters"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+		
+		convar
+		{
+			"z_spawn_safety_range" 600
+			"z_ghost_travel_distance" 2000
+			"z_frustration" 0
+			"sv_infinite_primary_ammo" 1
+		}		
+	}
+
+	"pyromania"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_normal 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_expert 0
+			sv_infinite_ammo 1
+			survivor_max_incapacitated_count 0
+		}
+	}
+
+	"flamewar"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"sv_infected_riot_control_tonfa_probability" 0
+			"sv_infected_ceda_vomitjar_probability" 0
+			"survivor_burn_factor_easy" 0
+			"survivor_burn_factor_normal" 0
+			"survivor_burn_factor_hard" 0
+			"survivor_burn_factor_expert" 0
+			"sv_infinite_ammo" 1
+			"survivor_max_incapacitated_count" 0
+			"z_charger_allow_shove" 1
+		}
+	}
+
+	"cocktailparty"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"sv_infected_riot_control_tonfa_probability" 0
+			"sv_infected_ceda_vomitjar_probability" 0
+			"survivor_burn_factor_easy" 0
+			"survivor_burn_factor_normal" 0
+			"survivor_burn_factor_hard" 0
+			"survivor_burn_factor_expert" 0
+			"sv_infinite_ammo" 1
+			"survivor_max_incapacitated_count" 0
+		}
+	}
+
+	"nemesis"
+	{
+		"base"		"coop"
+		"maxplayers"    "1"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			survivor_limit 1
+			z_charger_allow_shove 1
+			z_charger_health 10000
+			z_tank_health 1
+			z_charger_speed 150
+			z_witch_health 1
+			sv_pausable 1
+		}
+	}
+	
+	"thespecialists"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"sv_cheats" 1
+			"host_timescale" 0.5
+			"sv_infected_riot_control_tonfa_probability" 0
+		}
+	}
+
+	"thespecialists2"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"sv_cheats" 1
+			"host_timescale" 0.5
+			"sv_infected_riot_control_tonfa_probability" 0
+			"sv_infinite_primary_ammo" 1
+			"z_mob_spawn_min_size" 100
+			"z_mob_spawn_max_size" 130
+			"z_mob_spawn_min_interval_normal" 0
+			"z_mob_spawn_max_interval_normal" 1
+			"director_panic_forever" 1
+		}
+	}
+
+	"thespecialists3"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"sv_cheats" 1
+			"host_timescale" 0.5
+			"sv_infected_riot_control_tonfa_probability" 0
+			"sv_infinite_primary_ammo" 1
+			"survivor_friendly_fire_factor_easy" 0
+			"survivor_friendly_fire_factor_normal" 0
+			"survivor_friendly_fire_factor_hard" 0
+			"survivor_friendly_fire_factor_expert" 0
+		}
+	}
+
+	"killbill"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_infected_riot_control_tonfa_probability 0
+		}
+	}
+
+	"left2die"
+	{
+		"base"		"coop"
+		"maxplayers"    "2"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			z_jockey_ride_damage 15
+			z_pounce_damage 10
+			tongue_choke_damage_amount 15
+			tongue_drag_damage_amount 15
+			survivor_limit 2
+			sv_pausable 1
+		}
+	}
+
+	"boomerbbq"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			sv_infinite_ammo 1
+			z_exploding_speed 200
+			z_exploding_health 100
+			z_mob_spawn_max_size 50
+			z_mob_spawn_min_size 50
+			z_mob_spawn_min_interval_easy 90
+			z_mob_spawn_min_interval_expert 90
+			z_mob_spawn_min_interval_hard 90
+			z_mob_spawn_min_interval_normal 90
+			z_mob_spawn_min_interval_easy 120
+			z_mob_spawn_min_interval_expert 120
+			z_mob_spawn_min_interval_hard 120
+			z_mob_spawn_min_interval_normal 120
+			z_mega_mob_spawn_max_interval 180
+			z_mega_mob_spawn_min_interval 180
+			z_mega_mob_size 60
+			director_no_bosses 1
+		}
+	}
+
+	"bombardment"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sb_melee_approach_victim 1
+			sv_infected_riot_control_tonfa_probability 0
+			"sv_infinite_primary_ammo" 1
+			z_tank_health 8000
+		}
+	}
+
+	"karmabros"
+	{
+		"base"		"coop"
+		"maxplayers"    "2"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			survivor_limit 2
+			"z_charger_limit" 2
+			"z_special_spawn_interval" 0
+			"director_special_respawn_interval" 0
+			"z_respawn_interval" 0
+			"director_special_initial_spawn_delay_max" 5
+			"director_special_initial_spawn_delay_min" 0
+			z_charge_interval 2
+			z_charger_pound_dmg 100
+			z_tank_health 5
+			sv_pausable 1
+		}
+	}
+
+	"bigdaddy"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"z_versus_boomer_limit" 0
+			"z_versus_hunter_limit" 0
+			"z_versus_smoker_limit" 0 
+			"z_versus_spitter_limit" 3
+			"z_versus_charger_limit" 1
+			"z_versus_jockey_limit" 0			
+			"z_spitter_health" 50
+			"z_spitter_speed" 475
+			"z_spit_interval" 30
+			"spitter_pz_claw_dmg" 15
+			"spit_scaling_min_scale" 0.10
+			"z_charger_pound_dmg" 8
+			"z_charge_start_speed" 50
+			"z_charger_health" 15000
+			"z_charge_max_damage" 0.5
+			"z_charger_probe_attack" 1
+			"z_charger_probe_alone" 1
+			"z_charge_max_force" 1700
+			"z_charge_min_force" 1300
+			"survivor_revive_health" 25
+
+		}
+	}
+
+	"bigdaddyscav"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			"z_versus_boomer_limit" 0
+			"z_versus_hunter_limit" 0
+			"z_versus_smoker_limit" 0 
+			"z_versus_spitter_limit" 3
+			"z_versus_charger_limit" 1
+			"z_versus_jockey_limit" 0			
+			"z_spitter_health" 50
+			"z_spitter_speed" 475
+			"z_spit_interval" 30
+			"spitter_pz_claw_dmg" 10
+			"spit_scaling_min_scale" 0.10
+			"z_charger_pound_dmg" 8
+			"z_charge_start_speed" 50
+			"z_charger_health" 10000
+			"z_charge_max_damage" 0.5
+			"z_charger_probe_attack" 1
+			"z_charger_probe_alone" 1
+			"z_charge_max_force" 1700
+			"z_charge_min_force" 1300
+			"survivor_revive_health" 25
+
+		}
+	}
+
+	"bigdaddycoop"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {			
+			"z_charger_health" 15000
+			"z_charge_max_damage" 0
+			"spitter_pz_claw_dmg" 17
+			"z_spitter_health" 100
+			"z_spitter_speed" 475
+			"z_spit_interval" 10
+			"z_charge_start_speed" 100
+			"z_spit_latency" 1
+			"spitter_pz_claw_dmg" 15
+			"z_charger_pound_dmg" 8
+			"director_no_bosses" 1
+			z_mob_spawn_max_size 25
+			z_mob_spawn_min_size 20
+			z_mob_spawn_min_interval_easy 90
+			z_mob_spawn_min_interval_expert 90
+			z_mob_spawn_min_interval_hard 90
+			z_mob_spawn_min_interval_normal 90
+			z_mob_spawn_min_interval_easy 120
+			z_mob_spawn_min_interval_expert 120
+			z_mob_spawn_min_interval_hard 120
+			z_mob_spawn_min_interval_normal 120
+			z_mega_mob_spawn_max_interval 390
+			z_mega_mob_spawn_min_interval 390
+			z_speed 205
+		}
+	}
+
+	"deathsdoorvs"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"playercontrolledzombies"	"1"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			survivor_max_incapacitated_count 0
+			z_tank_health 2667
+		}
+	}
+
+	"specialdeliverysc"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			car_alarm_chirp_distance 0
+			car_alarm_distance 0
+			hud_deathnotice_threats 1
+			z_boomer_gibs 1
+		}
+	}
+
+	"specialdeliveryhc"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			car_alarm_chirp_distance 0
+			car_alarm_distance 0
+			cl_drawhud 0
+			hidehud 64
+			hud_deathnotice_threats 1
+		}
+	}
+
+	"swarm"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar {
+			director_panic_forever 1
+			z_common_limit 30
+			z_mob_spawn_min_size 30
+			z_mob_spawn_max_size 30
+			z_respawn_interval 0
+			z_mob_spawn_max_interval_easy 2
+			z_mob_spawn_max_interval_expert 2
+			z_mob_spawn_max_interval_hard 2
+			z_mob_spawn_max_interval_normal 2
+			z_mob_spawn_min_interval_easy 1
+			z_mob_spawn_min_interval_expert 1
+			z_mob_spawn_min_interval_hard 1
+			z_mob_spawn_min_interval_normal 1
+			z_speed 170 //215
+			survivor_max_incapacitated_count 3
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			sv_infinite_primary_ammo 1
+			survivor_revive_duration 3
+			//survivor_revive_health 50
+			first_aid_kit_use_duration 2
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"panicattack"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar {
+			//director_panic_forever 1
+			z_mob_spawn_min_size 30
+			z_mob_spawn_max_size 30
+			z_respawn_interval 0
+			z_tank_health 2000
+			sv_infected_ceda_vomitjar_probability 0.0
+			z_mob_spawn_max_interval_easy 2
+			z_mob_spawn_max_interval_expert 2
+			z_mob_spawn_max_interval_hard 2
+			z_mob_spawn_max_interval_normal 2
+			z_mob_spawn_min_interval_easy 1
+			z_mob_spawn_min_interval_expert 1
+			z_mob_spawn_min_interval_hard 1
+			z_mob_spawn_min_interval_normal 1
+			survivor_friendly_fire_factor_expert 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_easy 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_normal 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_expert 0
+			z_speed 275
+			survivor_max_incapacitated_count 0 //3
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			sv_infinite_primary_ammo 1
+			survivor_revive_duration 3
+			first_aid_kit_use_duration 2
+			pain_pills_health_value 100
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"panicattack2"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar {
+			//director_panic_forever 1
+			adrenaline_duration 20.0f
+			adrenaline_health_buffer 50
+			z_mob_spawn_min_size 40
+			z_mob_spawn_max_size 40
+			z_respawn_interval 0
+			z_tank_health 2000
+			sv_infected_ceda_vomitjar_probability 0.0
+			z_mob_spawn_max_interval_easy 2
+			z_mob_spawn_max_interval_expert 2
+			z_mob_spawn_max_interval_hard 2
+			z_mob_spawn_max_interval_normal 2
+			z_mob_spawn_min_interval_easy 1
+			z_mob_spawn_min_interval_expert 1
+			z_mob_spawn_min_interval_hard 1
+			z_mob_spawn_min_interval_normal 1
+			survivor_friendly_fire_factor_expert 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_easy 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_normal 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_expert 0
+			z_speed 275
+			survivor_max_incapacitated_count 0 //3
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			sv_infinite_primary_ammo 1
+			survivor_revive_duration 3
+			first_aid_kit_use_duration 2
+			pain_pills_health_value 100
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"hunterbarrage"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar {
+			sv_gravity 200
+			z_hunter_health 125
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"lowgravity"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar {
+			sv_gravity 200
+			survivor_max_incapacitated_count 1
+			"z_versus_boomer_limit" 1
+			"z_versus_hunter_limit" 3
+			"z_versus_smoker_limit" 2 
+			"z_versus_spitter_limit" 0
+			"z_versus_charger_limit" 1
+			"z_versus_jockey_limit" 1
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			versus_tank_chance 0
+			versus_tank_chance_intro 0
+		}
+	}
+
+	"huntingpartyvs"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"deathsdoorsv"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+		convar
+		{
+			survivor_max_incapacitated_count 0
+		}
+	}
+
+	"twistedtongues"
+	{
+		"base"		"versus"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar {
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			versus_tank_chance 0
+			versus_tank_chance_intro 0
+			z_tank_health 1000
+			z_gas_health 750
+			"z_versus_boomer_limit" 0
+			"z_versus_hunter_limit" 0
+			"z_versus_smoker_limit" 4 
+			"z_versus_spitter_limit" 0
+			"z_versus_charger_limit" 0
+			"z_versus_jockey_limit" 0
+		}
+	}
+
+	"deathsdoorhc"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+		"hasdifficulty"		"1"
+		convar
+		{
+			survivor_max_incapacitated_count 0
+			hidehud 64
+			cl_drawhud 0
+		}
+	}
+
+	"specialdeliveryelite"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			car_alarm_chirp_distance 0
+			car_alarm_distance 0
+			cl_drawhud 0
+			director_force_tank 1
+			hidehud 64
+			hud_deathnotice_threats 1
+			sv_glowenable 0
+			z_boomer_gibs 1
+		}
+	}
+
+	"deathsdoorelite"
+	{
+		"base"		"realism"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+		"hasdifficulty"		"1"
+		convar
+		{
+			survivor_max_incapacitated_count 0
+			hidehud 64
+			cl_drawhud 0
+			sv_glowenable 0
+			director_force_witch 1
+		}
+	}
+
+	"classicmode"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+		convar 
+		{
+			"sv_infected_riot_control_tonfa_probability" 0
+			"sv_infected_ceda_vomitjar_probability" 0
+			"z_female_boomer_spawn_chance" 100
+		}
+	}
+
+	"competition"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+
+			"buddha" 1
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"airraid"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_gravity 200
+			sv_infinite_primary_ammo 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			//grenadelauncher_radius_stumble 100
+			//grenadelauncher_damage 250
+			//grenadelauncher_velocity 1500
+			boomer_exposed_time_tolerance 99
+			z_hunter_health 125
+			z_pounce_damage 7
+			z_exploding_health 125
+			z_exploding_speed 200
+			z_vomit_interval 15
+			z_vomit_fade_duration 15
+			z_vomit_fade_start 15
+			z_tank_health 4500
+			survivor_respawn_with_guns 2
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"suicideboombers"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			boomer_leaker_chance 100
+			boomer_exposed_time_tolerance 99.0
+			z_exploding_speed 999
+			z_exploding_inner_radius 140
+			z_exploding_outer_radius 230
+			z_tank_health 1000
+			sb_max_team_melee_weapons 4
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"zslmondaymn"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infinite_primary_ammo 1
+			sv_infected_ceda_vomitjar_probability 0
+			adrenaline_health_buffer 100
+			z_speed 175
+			z_mob_spawn_min_size 50
+			z_mob_spawn_max_size 50
+			z_mob_spawn_max_interval_easy 2
+			z_mob_spawn_max_interval_expert 2
+			z_mob_spawn_max_interval_hard 2
+			z_mob_spawn_max_interval_normal 2
+			z_mob_spawn_min_interval_easy 2
+			z_mob_spawn_min_interval_expert 2
+			z_mob_spawn_min_interval_hard 2
+			z_mob_spawn_min_interval_normal 2
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			z_spitter_health 99999
+			z_spitter_speed 190
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_max_team_melee_weapons 4
+			survivor_max_incapacitated_count 0
+			z_tank_health 1000
+			adrenaline_duration 20.0f
+			survivor_respawn_with_guns 2
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+		}
+	}
+
+	"zsltuesday"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			director_force_tank 1
+			director_tank_checkpoint_interval 0
+			director_tank_min_interval 0
+			director_tank_max_interval 0
+			z_frustration_spawn_delay 0
+			z_tank_health 8000
+			sv_infinite_ammo 1
+			z_tank_speed 250
+			z_tank_throw_interval 800
+			hud_deathnotice_threats 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_max_incapacitated_count 0
+			survivor_respawn_with_guns 2
+			z_mob_spawn_min_interval_expert 99999
+			z_mob_spawn_max_interval_expert 99999
+			z_mob_spawn_min_interval_easy 99999
+			z_mob_spawn_max_interval_easy 99999
+			z_mob_spawn_min_interval_hard 99999
+			z_mob_spawn_max_interval_hard 99999
+			z_mob_spawn_min_interval_normal 99999
+			z_mob_spawn_max_interval_normal 99999
+			z_mega_mob_spawn_min_interval 99999
+			z_mega_mob_spawn_max_interval 99999
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			
+		}
+	}
+
+	"zslsaturday"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			//director_force_tank 1
+			director_tank_checkpoint_interval 0
+			director_tank_min_interval 0
+			director_tank_max_interval 0
+			z_frustration_spawn_delay 0
+			z_tank_speed 300
+			z_tank_throw_interval 800
+			hud_deathnotice_threats 1
+			survivor_speed 160
+			sv_gravity 200
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_max_incapacitated_count 0
+			survivor_respawn_with_guns -1
+			z_mob_spawn_min_interval_expert 99999
+			z_mob_spawn_max_interval_expert 99999
+			z_mob_spawn_min_interval_easy 99999
+			z_mob_spawn_max_interval_easy 99999
+			z_mob_spawn_min_interval_hard 99999
+			z_mob_spawn_max_interval_hard 99999
+			z_mob_spawn_min_interval_normal 99999
+			z_mob_spawn_max_interval_normal 99999
+			z_mega_mob_spawn_min_interval 99999
+			z_mega_mob_spawn_max_interval 99999
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			tank_burn_duration 999999
+			tank_burn_duration_expert 999999
+			tank_burn_duration_hard 999999
+			tank_stuck_visibility_tolerance_suicide 999999
+			tank_stuck_failsafe 0
+			tank_stasis_time_suicide 999999
+			z_tank_health 999999
+			z_tank_damage_slow_max_range 0
+			z_tank_damage_slow_min_range 0
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			
+		}
+	}
+
+	"tankballvs"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			director_force_tank 1
+			director_tank_checkpoint_interval 0
+			director_tank_min_interval 0
+			director_tank_max_interval 0
+			z_frustration_spawn_delay 0
+			z_tank_speed_vs 250
+			z_tank_throw_interval 800
+			hud_deathnotice_threats 1
+			survivor_speed 160
+			sv_gravity 200
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_max_incapacitated_count 0
+			survivor_respawn_with_guns 0
+			z_mob_spawn_min_interval_expert 99999
+			z_mob_spawn_max_interval_expert 99999
+			z_mob_spawn_min_interval_easy 99999
+			z_mob_spawn_max_interval_easy 99999
+			z_mob_spawn_min_interval_hard 99999
+			z_mob_spawn_max_interval_hard 99999
+			z_mob_spawn_min_interval_normal 99999
+			z_mob_spawn_max_interval_normal 99999
+			z_mega_mob_spawn_min_interval 99999
+			z_mega_mob_spawn_max_interval 99999
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			tank_burn_duration 999999
+			tank_burn_duration_expert 999999
+			tank_burn_duration_hard 999999
+			tank_stuck_visibility_tolerance_suicide 999999
+			tank_stuck_failsafe 0
+			tank_stasis_time_suicide 999999
+			z_tank_health 999999
+			z_frustration 0
+			z_tank_damage_slow_max_range 0
+			z_tank_damage_slow_min_range 0
+			vs_tank_damage 15
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			
+		}
+	}
+
+	"zslwednesday"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			z_wandering_density 0
+			z_mob_spawn_min_interval_expert 99999
+			z_mob_spawn_max_interval_expert 99999
+			z_mob_spawn_min_interval_easy 99999
+			z_mob_spawn_max_interval_easy 99999
+			z_mob_spawn_min_interval_hard 99999
+			z_mob_spawn_max_interval_hard 99999
+			z_mob_spawn_min_interval_normal 99999
+			z_mob_spawn_max_interval_normal 99999
+			z_mega_mob_spawn_min_interval 99999
+			z_mega_mob_spawn_max_interval 99999
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_max_team_melee_weapons 4
+			survivor_max_incapacitated_count 2
+			survivor_respawn_with_guns -1
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			sb_dont_shoot 1
+			survivor_max_incapacitated_count 0
+			z_spitter_health 1
+			z_exploding_health 1
+			z_health 1
+			z_witch_health 1
+			witch_force_wander 1
+			director_force_witch 1
+			z_witch_wander_personal_space 500
+			z_exploding_shove_max 2
+			z_exploding_shove_min 2
+			z_exploding_speed 210
+			z_vomit_interval 20
+			boomer_exposed_time_tolerance 99.0
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			z_spit_interval 30
+			z_speed 225
+		}
+	}
+
+	"zslthursday"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_primary_ammo 1
+			director_no_bosses 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_revive_health 100
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_max_team_melee_weapons 4
+			adrenaline_duration 20.0f
+			survivor_respawn_with_guns 2
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			director_force_witch 1
+			z_tank_throw_interval 800
+			z_tank_health 3000
+			z_jockey_leap_range 2000
+			z_leap_max_distance 2000
+			z_jockey_health 100
+			z_leap_power 800
+			z_jockey_control_max 100.0
+			z_jockey_control_min 100.0
+			z_jockey_control_variance 100.0
+			z_leap_interval 2.0
+			z_jockey_leap_again_timer 2.0
+			adrenaline_health_buffer 50.0
+			claw_range 0
+		}
+	}
+
+	"zslff"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			ammo_grenadelauncher_max 999999
+			grenadelauncher_velocity 2000
+			sv_infinite_ammo 1
+			survival_tank_stage_interval 120
+			survival_tank_stage_interval_decay 90
+			survivor_friendly_fire_factor_hard 0.2
+			//survivor_friendly_fire_factor_easy 0
+			//survivor_friendly_fire_factor_normal 0
+			//survivor_friendly_fire_factor_hard 0
+			//survivor_friendly_fire_factor_expert 0
+			//survivor_burn_factor_easy 0
+			//survivor_burn_factor_expert 0
+			//survivor_burn_factor_hard 0
+			//survivor_burn_factor_normal 0
+			survivor_respawn_with_guns -1
+			survivor_max_incapacitated_count 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			z_tank_throw_interval 15
+			z_tank_health 6000
+			sv_gravity 100
+		}
+	}
+
+	"zslfriday"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			ammo_grenadelauncher_max 999999
+			grenadelauncher_velocity 2000
+			director_force_tank 1
+			//survivor_friendly_fire_factor_easy 0
+			//survivor_friendly_fire_factor_normal 0
+			//survivor_friendly_fire_factor_hard 0
+			//survivor_friendly_fire_factor_expert 0
+			//survivor_burn_factor_easy 0
+			//survivor_burn_factor_expert 0
+			//survivor_burn_factor_hard 0
+			//survivor_burn_factor_normal 0
+			survivor_respawn_with_guns -1
+			survivor_max_incapacitated_count 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			z_tank_throw_interval 800
+			tank_burn_duration 90
+			tank_burn_duration_expert 90
+			tank_burn_duration_hard 90
+			sv_gravity 100
+		}
+	}
+
+	"zslfridaymn"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			ammo_grenadelauncher_max 999
+			grenadelauncher_velocity 3000
+			adrenaline_health_buffer 100
+			z_speed 175
+			z_mob_spawn_min_size 50
+			z_mob_spawn_max_size 50
+			z_mob_spawn_max_interval_easy 2
+			z_mob_spawn_max_interval_expert 2
+			z_mob_spawn_max_interval_hard 2
+			z_mob_spawn_max_interval_normal 2
+			z_mob_spawn_min_interval_easy 2
+			z_mob_spawn_min_interval_expert 2
+			z_mob_spawn_min_interval_hard 2
+			z_mob_spawn_min_interval_normal 2
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			z_spitter_health 99999
+			z_spitter_speed 190
+			z_spit_interval 10
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_max_team_melee_weapons 4
+			survivor_max_incapacitated_count 0
+			z_tank_health 1000
+			adrenaline_duration 20.0f
+			survivor_respawn_with_guns 2
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+		}
+	}
+
+	"zslsunday"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			boomer_leaker_chance 100
+			boomer_exposed_time_tolerance 99.0
+			z_exploding_speed 999
+			z_exploding_inner_radius 140
+			z_exploding_outer_radius 230
+			z_tank_health 250
+			z_witch_health 150
+			z_tank_throw_interval 800
+			sb_max_team_melee_weapons 4
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			survivor_max_incapacitated_count 0
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			hud_deathnotice_threats 1
+			tank_burn_duration 60
+			tank_burn_duration_expert 60
+			tank_burn_duration_hard 60
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+		}
+	}
+
+	"zslsundaymn"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_ammo 1
+			director_no_bosses 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_revive_health 100
+			survivor_respawn_with_guns -1
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			survivor_max_incapacitated_count 3
+			z_tank_throw_interval 800
+			z_gas_health 100
+			tongue_hit_delay 60
+			tank_burn_duration 90
+			tank_burn_duration_expert 90
+			tank_burn_duration_hard 90
+			z_tank_health 2000
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			claw_range 0
+		}
+	}
+
+	"zslmondayold"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			z_wandering_density 0
+			z_mob_spawn_min_interval_expert 99999
+			z_mob_spawn_max_interval_expert 99999
+			z_mob_spawn_min_interval_easy 99999
+			z_mob_spawn_max_interval_easy 99999
+			z_mob_spawn_min_interval_hard 99999
+			z_mob_spawn_max_interval_hard 99999
+			z_mob_spawn_min_interval_normal 99999
+			z_mob_spawn_max_interval_normal 99999
+			z_mega_mob_spawn_min_interval 99999
+			z_mega_mob_spawn_max_interval 99999
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			//director_no_bosses 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			survivor_max_incapacitated_count 0
+			survivor_respawn_with_guns -1
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			survivor_max_incapacitated_count 0
+			director_force_witch 1
+			z_exploding_speed 200
+			z_tank_health 2000
+			z_tank_throw_interval 800
+			//z_exploding_shove_max 2
+			//z_exploding_shove_min 2
+			boomer_exposed_time_tolerance 99.0
+			tongue_miss_delay 20
+			vomitjar_radius_survivors 175
+			vomitjar_duration_survivor 20
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+		}
+	}
+
+	"zslsaturdaymn"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sb_melee_approach_victim 1
+			sv_infected_riot_control_tonfa_probability 0
+			z_wandering_density 0
+			z_mob_spawn_min_interval_expert 99999
+			z_mob_spawn_max_interval_expert 99999
+			z_mob_spawn_min_interval_easy 99999
+			z_mob_spawn_max_interval_easy 99999
+			z_mob_spawn_min_interval_hard 99999
+			z_mob_spawn_max_interval_hard 99999
+			z_mob_spawn_min_interval_normal 99999
+			z_mob_spawn_max_interval_normal 99999
+			z_mega_mob_spawn_min_interval 99999
+			z_mega_mob_spawn_max_interval 99999
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_revive_health 100
+			z_tank_throw_interval 800
+			z_charge_interval 20
+			z_jockey_leap_again_timer 10.0
+			z_spit_interval 60
+			z_tank_health 2000
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			z_charge_max_damage 0
+			claw_range 0
+		}
+	}
+
+	"zslwednesdaymn"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			"sv_infinite_primary_ammo" 1
+			"z_forcezombiemodelname" common_male_riot
+			"z_forcezombiemodel" 1
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			z_mob_spawn_min_size 50
+			z_mob_spawn_max_size 60
+			z_speed 350
+			z_alert_range 9000
+			z_wandering_density 0
+			z_mob_spawn_max_interval_easy 10
+			z_mob_spawn_max_interval_expert 10
+			z_mob_spawn_max_interval_hard 10
+			z_mob_spawn_max_interval_normal 10
+			z_mob_spawn_min_interval_easy 10
+			z_mob_spawn_min_interval_expert 10
+			z_mob_spawn_min_interval_hard 10
+			z_mob_spawn_min_interval_normal 10
+			survivor_respawn_with_guns 2
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_max_team_melee_weapons 4
+			survivor_max_incapacitated_count 0
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+		}
+	}
+
+	"zsltuesdaymn"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			z_spitter_health 10
+			z_spit_interval 10
+			z_tank_health 1500
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_max_team_melee_weapons 4
+			survivor_max_incapacitated_count 0
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+		}
+	}
+
+	"zslthursdaymn"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_primary_ammo 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_revive_health 100
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			survivor_respawn_with_guns 2
+			sb_allow_leading 1
+			sb_separation_danger_max_range 9999
+			sb_separation_danger_min_range 9999
+			sb_separation_range 9999
+			z_charger_health 300
+			z_charge_max_damage 0
+			z_tank_health 3000
+			claw_range 0
+		}
+	}
+
+	"fallenhope"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_primary_ammo 1
+			z_fallen_kill_suppress_time 1
+			z_fallen_max_count 9999
+			sv_fallen_survivor_health_multiplier 10.0
+			"z_forcezombiemodelname" common_male_fallen_survivor
+			"z_forcezombiemodel" 1
+			director_no_bosses 1
+			adrenaline_health_buffer 100
+			z_speed 150
+			z_mob_spawn_min_size 40
+			z_mob_spawn_max_size 40
+			z_mob_spawn_max_interval_easy 2
+			z_mob_spawn_max_interval_expert 2
+			z_mob_spawn_max_interval_hard 2
+			z_mob_spawn_max_interval_normal 2
+			z_mob_spawn_min_interval_easy 2
+			z_mob_spawn_min_interval_expert 2
+			z_mob_spawn_min_interval_hard 2
+			z_mob_spawn_min_interval_normal 2
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			z_spitter_health 99999
+			z_spitter_speed 160
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_max_team_melee_weapons 4
+			survivor_max_incapacitated_count 0
+			z_tank_health 500
+			adrenaline_duration 20.0f
+		}
+	}
+
+	"taste"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+		convar
+		{
+			sv_infinite_ammo 1
+			vomitjar_radius_survivors 110
+			vomitjar_duration_survivor 20
+			boomer_exposed_time_tolerance 99
+			nb_vision_ignore_survivors 1
+			z_health 1
+			z_exploding_health 1
+			z_tank_health 1
+		}
+	}
+
+	"united"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			precache_all_survivors 1
+		}
+	}
+
+	"unitedcoop"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			precache_all_survivors 1
+		}
+	}
+
+	"unitedsc"
+	{
+		"base"		"scavenge"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			precache_all_survivors 1
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			vs_max_team_switches 99
+			scavenge_round_initial_time 300
+		}
+	}
+
+	"tankrush"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sv_cheats 1
+			hud_deathnotice_threats 1
+		}
+	}
+
+	"witchhunt"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sv_cheats 1
+			//director_no_bosses 1
+		}
+	}
+
+	"witchhunt2"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sv_cheats 1
+			//director_no_bosses 1
+		}
+	}
+
+	"dead"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			z_speed 130
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			survivor_max_incapacitated_count 0
+			z_tank_health 100
+			z_mob_spawn_max_interval_easy 30
+			z_mob_spawn_max_interval_expert 30
+			z_mob_spawn_max_interval_hard 30
+			z_mob_spawn_max_interval_normal 30
+			z_mob_spawn_min_interval_easy 30
+			z_mob_spawn_min_interval_expert 30
+			z_mob_spawn_min_interval_hard 30
+			z_mob_spawn_min_interval_normal 30
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_revive_health 5
+			z_tank_speed 150
+			z_allow_ai_to_use_abilities 0
+			pain_pills_health_value 5
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+		}
+	}
+
+	"tankassault"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"	// survival
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			survival_tank_stage_interval 5
+			survival_tank_stage_interval_decay 0
+			survival_tank_multiple_spawn_delay 0
+		}
+	}
+
+	"travelinglight"
+	{
+		"base"		"coop"
+		"maxplayers"    "2"
+		"achievementindex"	"16"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_witch_always_kills 1
+			survivor_limit 2
+			first_aid_kit_max_heal 150
+			pain_pills_health_value 150
+			sv_pausable 1
+		}
+	}
+
+	"firestorm"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"sv_infinite_ammo" 1
+			z_charger_health 150
+			z_gas_health 100
+			z_hunter_health 150
+			z_jockey_health 150
+			z_spitter_health 50
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_max_incapacitated_count 0
+			survivor_revive_health 100
+			survivor_respawn_with_guns -1
+			z_survivor_respawn_health 100
+			z_tank_throw_interval 800
+			tongue_hit_delay 60
+			tank_burn_duration 20
+			tank_burn_duration_expert 20
+			tank_burn_duration_hard 20
+			z_tank_health 5000
+			z_charger_allow_shove 1
+			sv_gravity 200
+			//claw_range 0
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"versuscoopnokit"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+			director_pain_pill_density 1.50
+		}		
+	}
+
+	"DBT"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"	// versus
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			survivor_max_incapacitated_count 0
+			z_tank_health 2000
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			z_spawn_safety_range 600
+			z_ghost_travel_distance 2000
+			z_frustration 0
+
+		}
+	}
+
+	"tankattack"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			//ammo_assaultrifle_max 999999
+			//ammo_autoshotgun_max 999999
+			//ammo_huntingrifle_max 999999
+			//ammo_m60_max 150
+			//ammo_shotgun_max 999999
+			//ammo_smg_max 999999
+			//ammo_sniperrifle_max 999999
+			hud_deathnotice_threats 1
+			z_tank_throw_interval 30
+			sv_infinite_primary_ammo 1 //remove if needed
+			survivor_allow_crawling 1
+			survivor_crawl_speed 75
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_incap_decay_rate 10
+			survivor_revive_duration 3
+			survivor_revive_health 50
+			first_aid_kit_use_duration 3
+			z_tank_health 3000
+		}
+	}
+
+	"tankbake"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			hud_deathnotice_threats 1
+			z_tank_throw_interval 30
+			survivor_allow_crawling 1
+			survivor_crawl_speed 75
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_incap_decay_rate 10
+			survivor_revive_duration 3
+			survivor_revive_health 50
+			first_aid_kit_use_duration 3
+			tank_burn_duration 10
+			tank_burn_duration_expert 10
+			tank_burn_duration_hard 10
+			z_tank_health 3000
+		}
+	}
+
+	"magnumforce"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_ammo 1
+			sv_fallen_survivor_health_multiplier 0.0
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_max_incapacitated_count 0
+			tank_throw_allow_range 999999
+			tongue_choke_damage_amount 5
+			z_charger_health 1
+			z_exploding_health 1
+			z_gas_health 1
+			z_hunter_health 1
+			z_jockey_health 1
+			z_spitter_health 1
+			z_tank_health 900
+			z_witch_health 320
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"sniperforce"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_ammo 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_max_incapacitated_count 1
+			survivor_respawn_with_guns 2
+			survivor_revive_health 100
+			tank_throw_allow_range 999999
+			tongue_choke_damage_amount 5
+			z_charger_health 1
+			z_exploding_health 1
+			z_gas_health 1
+			z_hunter_health 1
+			z_jockey_health 1
+			z_spitter_health 1
+			z_tank_health 2500
+			z_witch_health 700
+			z_spit_interval 5
+			z_survivor_respawn_health 100
+			z_vomit_range 600
+			z_vomit_target_range 580
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"assaultforce"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_ammo 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_max_incapacitated_count 1
+			survivor_respawn_with_guns 2
+			survivor_revive_health 100
+			tank_throw_allow_range 999999
+			tongue_choke_damage_amount 5
+			z_charger_health 1
+			z_exploding_health 1
+			z_gas_health 1
+			z_hunter_health 1
+			z_jockey_health 1
+			z_spitter_health 1
+			z_tank_health 2500
+			z_witch_health 700
+			z_spit_interval 5
+			z_survivor_respawn_health 100
+			z_vomit_range 600
+			z_vomit_target_range 580
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"shotgunforce"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_ammo 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_max_incapacitated_count 1
+			survivor_respawn_with_guns 2
+			survivor_revive_health 100
+			tank_throw_allow_range 999999
+			tongue_choke_damage_amount 5
+			z_charger_health 1
+			z_exploding_health 1
+			z_gas_health 1
+			z_hunter_health 1
+			z_jockey_health 1
+			z_spitter_health 1
+			z_tank_health 3500
+			//z_witch_health 700
+			z_spit_interval 5
+			z_survivor_respawn_health 100
+			z_vomit_range 600
+			z_vomit_target_range 580
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"randomforce"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_ammo 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_max_incapacitated_count 1
+			survivor_respawn_with_guns 2
+			survivor_revive_health 100
+			tank_throw_allow_range 999999
+			tongue_choke_damage_amount 5
+			z_charger_health 1
+			z_exploding_health 1
+			z_gas_health 1
+			z_hunter_health 1
+			z_jockey_health 1
+			z_spitter_health 1
+			z_tank_health 2500
+			z_witch_health 700
+			z_spit_interval 5
+			z_survivor_respawn_health 100
+			z_vomit_range 600
+			z_vomit_target_range 580
+			z_gun_swing_coop_max_penalty 99999999
+			z_gun_swing_coop_min_penalty 99999999
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"acidtrip"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_ammo 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_max_incapacitated_count 0
+			survivor_respawn_with_guns 2
+			z_spit_interval 1
+			z_spit_range 5000
+			z_spit_velocity 2000
+			z_spitter_health 500
+			z_spitter_speed 350
+			z_tank_health 1800
+			gas_can_use_duration 1
+			pain_pills_health_value 100
+			tank_burn_duration 120
+			tank_burn_duration_expert 120
+			tank_burn_duration_hard 120
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"zslacidtrip"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			hud_deathnotice_threats 1
+			survivor_max_incapacitated_count 0
+			z_spit_interval 0.1
+			z_spit_range 9999 //5000
+			z_spit_velocity 3000 //2000
+			z_spitter_health 600
+			z_spitter_speed 999
+			z_tank_health 1500
+			tank_burn_duration 120
+			tank_burn_duration_expert 120
+			tank_burn_duration_hard 120
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_ledge_grab_health 15
+			survival_tank_stage_interval 40
+			survival_special_spawn_interval 5
+		}
+	}
+
+	"zslsuicideboombers"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			boomer_leaker_chance 100
+			boomer_exposed_time_tolerance 99.0
+			survivor_max_incapacitated_count 0
+			z_exploding_speed 999
+			z_exploding_inner_radius 140
+			z_exploding_outer_radius 230
+			z_tank_health 200
+			tank_burn_duration 30
+			tank_burn_duration_expert 30
+			tank_burn_duration_hard 30
+			sb_max_team_melee_weapons 4
+			survival_tank_stage_interval 40
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_ledge_grab_health 15
+			survival_tank_stage_interval 40
+			survival_special_spawn_interval 5
+		}
+	}
+
+	"zslinfestation"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			hud_deathnotice_threats 1
+			z_allow_ai_to_use_abilities 0
+			z_hunter_health 200
+			z_hunter_speed 320
+			z_special_spawn_interval 0
+			z_tank_health 2000
+			survivor_max_incapacitated_count 0
+			tank_burn_duration 120
+			tank_burn_duration_expert 120
+			tank_burn_duration_hard 120
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_ledge_grab_health 15
+			survival_special_spawn_interval 5
+			survival_tank_stage_interval 40
+			claw_range 26
+		}
+	}
+
+	"zsljockeytrouble"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			hud_deathnotice_threats 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_max_incapacitated_count 4
+			sb_max_team_melee_weapons 4
+			tank_burn_duration 60
+			tank_burn_duration_expert 60
+			tank_burn_duration_hard 60
+			z_tank_throw_interval 800
+			z_tank_health 1500
+			//z_leap_max_distance 2000
+			z_jockey_health 150
+			//z_leap_power 800
+			z_jockey_control_max 100.0
+			z_jockey_control_min 100.0
+			z_jockey_control_variance 100.0
+			z_leap_interval 0.1
+			z_jockey_leap_again_timer 2.0
+			z_jockey_ride_damage 15
+			z_jockey_leap_range 5000
+			survivor_revive_health 75
+			survivor_incap_health 15
+			survivor_ledge_grab_health 15
+			survival_tank_stage_interval 40
+			survival_special_spawn_interval 5
+			sb_friend_immobilized_reaction_time_vs 10.0
+		}
+	}
+
+	"zslblastzone"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			ammo_grenadelauncher_max 999
+			hud_deathnotice_threats 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_max_incapacitated_count 4
+			z_tank_health 4000
+			tongue_range 1125
+			tongue_choke_damage_amount 20
+			survivor_incap_health 15
+			survivor_ledge_grab_health 15
+			survivor_revive_health 100
+			survival_tank_stage_interval 40
+			survival_special_spawn_interval 5
+			sb_friend_immobilized_reaction_time_vs 10.0
+		}
+	}
+
+	"zslspecialedition"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			hud_deathnotice_threats 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_revive_health 100
+			survivor_max_incapacitated_count 4
+			z_tank_throw_interval 800
+			z_charge_interval 20
+			z_jockey_leap_again_timer 10.0
+			z_spit_interval 60
+			z_tank_health 2500
+			z_charge_max_damage 0
+			survivor_incap_health 15
+			survivor_ledge_grab_health 15
+			z_jockey_ride_damage 10
+			z_pounce_damage 10
+			tongue_choke_damage_amount 10
+			survival_tank_stage_interval 40
+			survival_special_spawn_interval 5
+			sb_friend_immobilized_reaction_time_vs 10.0
+		}
+	}
+
+	"zslhunterbarrage"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar {
+			sv_gravity 200
+			"sv_infinite_primary_ammo" 1
+			hud_deathnotice_threats 1
+			z_hunter_health 200
+			z_pounce_damage 20
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_revive_health 100
+			survivor_max_incapacitated_count 4
+			survivor_incap_health 15
+			survivor_ledge_grab_health 15
+			tank_stuck_visibility_tolerance_suicide 999999
+			tank_stuck_failsafe 0
+			tank_stasis_time_suicide 999999
+			survival_tank_stage_interval 40
+			survival_special_spawn_interval 5
+			sb_friend_immobilized_reaction_time_vs 10.0
+		}
+	}
+
+	"zslriot"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			"sv_infinite_primary_ammo" 1
+			"z_forcezombiemodelname" common_male_riot
+			"z_forcezombiemodel" 1
+			sv_infected_riot_control_tonfa_probability 0
+			hud_deathnotice_threats 1
+			z_speed 350
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_ledge_grab_health 15
+			tank_burn_duration 60
+			tank_burn_duration_expert 60
+			tank_burn_duration_hard 60
+			sb_max_team_melee_weapons 4
+			pain_pills_health_value 100
+			survivor_max_incapacitated_count 0
+			z_gun_swing_vs_max_penalty 99999999
+			z_gun_swing_vs_min_penalty 99999999
+		}
+	}
+
+	"zslsmokerroast"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_ammo 1
+			sv_gravity 200
+			hud_deathnotice_threats 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_revive_health 100
+			survivor_incap_health 15
+			survivor_ledge_grab_health 15
+			survivor_max_incapacitated_count 4
+			z_tank_throw_interval 800
+			z_gas_health 200
+			tongue_hit_delay 60
+			tongue_choke_damage_amount 20
+			tank_burn_duration 40
+			tank_burn_duration_expert 40
+			tank_burn_duration_hard 40
+			tank_stuck_visibility_tolerance_suicide 999999
+			tank_stuck_failsafe 0
+			tank_stasis_time_suicide 999999
+			z_tank_health 2000
+			survival_tank_stage_interval 40
+			survival_special_spawn_interval 5
+		}
+	}
+
+	"zslfullycharged"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			//z_charger_health 125
+			z_charge_duration 10.0
+			z_charge_interval 8
+			z_charge_max_damage 0
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_revive_health 100
+			survivor_incap_health 15
+			survivor_ledge_grab_health 15
+			survivor_max_incapacitated_count 4
+			pain_pills_health_value 100
+			survival_special_spawn_interval 5
+			claw_range 26
+		}
+	}
+
+	"zsltankball"
+	{
+		"base"		"survival"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			z_tank_speed 300
+			z_tank_throw_interval 800
+			hud_deathnotice_threats 1
+			survivor_speed 160
+			sv_gravity 200
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_max_incapacitated_count 0
+			tank_burn_duration 999999
+			tank_burn_duration_expert 999999
+			tank_burn_duration_hard 999999
+			tank_stuck_visibility_tolerance_suicide 999999
+			tank_stuck_failsafe 0
+			tank_stasis_time_suicide 999999
+			z_tank_health 999999
+			z_tank_damage_slow_max_range 0
+			z_tank_damage_slow_min_range 0
+			pain_pills_health_value 100
+			survival_tank_stage_interval 10
+			survival_tank_stage_interval_decay 0
+		}
+	}
+
+	"boomershooterex"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			sv_tags boomershooterextreme 
+
+			sb_enforce_proximity_range 50
+			sb_max_battlestation_range_from_human 50
+			sb_max_scavenge_separation 130
+			sb_max_team_melee_weapons 1
+			sb_vomit_blind_time 0.1
+			sb_neighbor_range 50
+			sb_separation_danger_max_range 100
+			sb_separation_danger_min_range 50
+			sb_separation_range 100
+			sb_threat_very_close_range 4000
+			sb_threat_close_range 8000
+			sb_close_threat_range 8000
+			sb_threat_medium_range 12000
+			sb_threat_far_range 16000
+			sb_threat_very_far_range 20000
+			shout_threat_range 1000
+
+			director_no_bosses 1
+			z_tank_health 1
+			z_witch_health 1
+
+			director_no_specials 0
+			//z_smoker_limit 0
+			//z_hunter_limit 0
+			//z_spitter_limit 0
+			//z_charger_limit 0
+			//z_jockey_limit 0
+
+			boomer_vomit_delay 0.1
+			z_vomit_fade_duration 0.1
+			z_vomit_fade_start 0.1
+			z_vomit_duration 1
+			z_vomit_interval 0.1
+			z_vomit_fatigue 0.1
+			z_vomit_range 150
+			z_exploding_splat_radius 1
+
+			z_exploding_health 100
+			z_exploding_speed 300
+			z_exploding_shove_max 99
+			z_exploding_shove_min 99
+			boomer_exposed_time_tolerance 0.1
+			boomer_pz_claw_dmg 15
+
+			z_special_spawn_interval 8
+			director_special_respawn_interval 8
+			z_respawn_interval 8
+			director_special_initial_spawn_delay_max 2
+			director_special_initial_spawn_delay_min 1
+
+			// z_gun_swing_interval 2
+
+			z_wandering_density 0
+			z_scout_mob_spawn_range 1000
+			z_mob_spawn_min_size 50
+			z_mob_spawn_max_size 50
+			z_mob_spawn_min_interval_expert 99999
+			z_mob_spawn_max_interval_expert 99999
+			z_mob_spawn_min_interval_easy 99999
+			z_mob_spawn_max_interval_easy 99999
+			z_mob_spawn_min_interval_hard 99999
+			z_mob_spawn_max_interval_hard 99999
+			z_mob_spawn_min_interval_normal 99999
+			z_mob_spawn_max_interval_normal 99999
+			z_mega_mob_spawn_min_interval 99999
+			z_mega_mob_spawn_max_interval 99999
+			z_mega_mob_size 50
+			z_common_limit 50 
+			z_health 100	
+			z_spawn_mobs_behind_chance 0
+		}
+	}
+
+	"right2live"
+	{
+		"base"		"coop"
+		"maxplayers"    "2"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			survivor_limit 2
+			sv_pausable 1
+		}
+	}
+
+	"specialdeliverycl"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			ammo_autoshotgun_max 128
+			car_alarm_chirp_distance 0
+			car_alarm_distance 0
+			hud_deathnotice_threats 1
+			z_boomer_gibs 1
+			z_female_boomer_spawn_chance 100
+		}
+	}
+
+	"greenmile"
+	{
+		"base"		"versus"
+		"maxplayers"    "8"
+		"achievementindex"	"16"
+		"x360ctx"	"17"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sb_dont_shoot 1
+		}
+	}
+
+	"many"
+	{
+		"base"		"coop"
+		"maxplayers"    "1"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			sv_pausable 1
+		}
+	}
+
+	"many2"
+	{
+		"base"		"coop"
+		"maxplayers"    "2"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar 
+		{
+			survivor_limit 2
+			sv_pausable 1
+		}
+	}
+
+	"coopversus"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"4"
+		"x360ctx"	"11"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			vs_max_team_switches 99
+		}
+	}
+
+	"horror42outbreak"
+	{
+		"base"		"coop"
+		"maxplayers"    "2"
+		"achievementindex"	"16"
+		"x360ctx"	"17"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_infected_riot_control_tonfa_probability 0
+			ammo_shotgun_max 16
+			ammo_grenadelauncher_max 5
+			ammo_smg_max 50
+			ammo_sniperrifle_max 15
+			ammo_m60_max 100
+			ammo_assaultrifle_max 50
+			ammo_autoshotgun_max 20
+			survivor_limit 2
+		}
+	}
+
+	"horror42mercenaries"
+	{
+		"base"		"survival"
+		"maxplayers"    "2"
+		"achievementindex"	"16"
+		"x360ctx"	"17"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			sv_infected_riot_control_tonfa_probability 0
+			ammo_shotgun_max 16
+			ammo_grenadelauncher_max 5
+			ammo_smg_max 50
+			ammo_sniperrifle_max 15
+			ammo_m60_max 100
+			ammo_assaultrifle_max 50
+			ammo_autoshotgun_max 20
+			survivor_limit 2
+		}
+	}
+
+	"superhardmode"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"16"
+		"x360ctx"	"17"
+		"dlcmask"	"0x0000000000000002"
+
+		convar {
+			z_charger_health 1800
+			z_hunter_health 750
+			z_jockey_health 975
+			z_spitter_health 300
+			z_tank_health 12000
+			z_witch_health 3000
+			z_exploding_health 150
+			z_gas_health 750
+			z_health 150
+			sv_disable_glow_survivors 1
+			sv_disable_glow_faritems 1
+			sv_rescue_disabled 1
+			z_non_head_damage_factor_multiplier 0.5
+			z_head_damage_causes_wounds 1
+			z_use_next_difficulty_damage_factor 1
+			z_witch_always_kills 1
+			hidehud 64
+			cl_drawhud 0
+		}
+	}
+
+	"classicversuscoop"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			ammo_shotgun_max 128
+			ammo_smg_max 480
+			ammo_assaultrifle_max 360
+			ammo_autoshotgun_max 128
+			ammo_huntingrifle_max 180
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+			z_female_boomer_spawn_chance 100
+			z_versus_boomer_limit 1
+			z_versus_charger_limit 0
+			z_versus_hunter_limit 2
+			z_versus_jockey_limit 0
+			z_versus_smoker_limit 1
+			z_versus_spitter_limit 0
+		}		
+	}
+
+	"wreckingcrew"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			director_force_tank 1
+			//sb_melee_approach_victim 1
+			survivor_allow_crawling 1
+			survivor_crawl_speed 75
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			z_charger_allow_shove 1
+			z_tank_health 100 //1
+			tank_swing_range 33
+			tank_throw_allow_range 999999
+			z_survivor_respawn_health 100
+			defibrillator_return_to_life_time 2.0
+			defibrillator_use_duration 2
+			survivor_revive_duration 1
+			survivor_revive_health 100
+			first_aid_kit_use_duration 2
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"cooplg"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_gravity 200
+			director_force_tank 1
+			first_aid_kit_use_duration 1
+			survivor_revive_duration 3
+			survivor_revive_health 69
+			z_mob_spawn_max_size 30
+			z_mob_spawn_min_size 30
+			z_special_spawn_interval 30
+			z_tank_health 4500
+			z_tank_throw_interval 15
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"coopslowmo"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			host_timescale 0.5
+		}
+	}
+
+	"coopspeed"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			host_timescale 2.0
+		}
+	}
+
+	"hunterbarrage2"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar {
+			sv_infinite_ammo 1
+			sv_gravity 125
+			director_force_tank 1
+			first_aid_kit_use_duration 2
+			sb_close_checkpoint_door_interval 0.5
+			survivor_incap_decay_rate 10
+			survivor_revive_duration 3
+			survivor_revive_health 69
+			tank_throw_min_interval 6
+			z_hunter_health 125
+			z_jockey_control_max 100.0
+			z_jockey_control_min 100.0
+			z_jockey_control_variance 100.0
+			z_jockey_leap_range 750
+			z_jockey_ride_damage 6
+			z_leap_power 500
+			z_pounce_damage 6
+			z_tank_health 6000
+			z_tank_throw_health 30
+			z_tank_throw_interval 6
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"test1"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"test2"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_ammo 1
+			god 1
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"test3"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"partyhard"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+	}
+
+	"tankfriction"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			hud_deathnotice_threats 1
+			z_tank_throw_interval 30
+			sv_infinite_primary_ammo 1
+			survivor_allow_crawling 1
+			survivor_crawl_speed 75
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_incap_decay_rate 10
+			survivor_revive_duration 1
+			survivor_revive_health 100
+			first_aid_kit_use_duration 1
+			z_tank_health 3000
+			sv_friction -3
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"fightorflight"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_gravity 50
+			sv_infinite_primary_ammo 1
+			director_force_tank 1
+			first_aid_heal_percent 1.0
+			first_aid_kit_use_duration 3
+			sb_close_checkpoint_door_interval 0.5
+			survivor_respawn_with_guns 2
+			survivor_revive_duration 2
+			survivor_revive_health 100
+			tank_throw_min_interval 8
+			tongue_range 1500
+			z_charge_interval 1
+			z_jockey_control_max 100.0
+			z_jockey_control_min 100.0
+			z_jockey_control_variance 100.0
+			z_jockey_leap_range 1000
+			z_leap_power 600
+			z_spit_interval 1
+			z_tank_throw_interval 8
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"zslmonday"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_ammo 1
+			adrenaline_duration 10.0f
+			adrenaline_health_buffer 50
+			claw_range 0
+			claw_range_down 0
+			director_force_tank 1
+			sb_close_checkpoint_door_interval 0.5
+			sb_friend_immobilized_reaction_time_expert 999
+			sb_friend_immobilized_reaction_time_hard 999
+			sb_friend_immobilized_reaction_time_normal 999
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_incap_decay_rate 100
+			survivor_limp_health 1
+			survivor_limp_walk_speed 210
+			survivor_max_incapacitated_count 99
+			survivor_revive_health 75
+			tank_throw_allow_range 999999
+			z_exploding_health 1
+			z_exploding_inner_radius 200 //130
+			z_exploding_outer_radius 225 //200
+			z_exploding_shove_max 1
+			z_exploding_shove_min 1
+			z_exploding_speed 210
+			z_female_boomer_spawn_chance 50
+			z_jockey_control_max 100.0
+			z_jockey_control_min 100.0
+			z_jockey_control_variance 100.0
+			z_tank_health 1000 //500
+			z_tank_throw_interval 800
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"boom60"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			boomer_exposed_time_tolerance 99
+			boomer_leaker_chance 10
+			boomer_vomit_delay 0
+			first_aid_kit_use_duration 2
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_max_incapacitated_count 1
+			survivor_revive_duration 2
+			survivor_revive_health 50
+			z_boomer_gibs 1
+			z_exploding_health 1
+			z_exploding_speed 300
+			z_female_boomer_spawn_chance 50
+			z_vomit_duration 1.0
+			z_vomit_interval 20
+			z_wandering_density 0
+			z_mob_spawn_min_interval_expert 99999
+			z_mob_spawn_max_interval_expert 99999
+			z_mob_spawn_min_interval_easy 99999
+			z_mob_spawn_max_interval_easy 99999
+			z_mob_spawn_min_interval_hard 99999
+			z_mob_spawn_max_interval_hard 99999
+			z_mob_spawn_min_interval_normal 99999
+			z_mob_spawn_max_interval_normal 99999
+			z_mega_mob_spawn_min_interval 99999
+			z_mega_mob_spawn_max_interval 99999
+			sv_infected_riot_control_tonfa_probability 0
+			sv_infected_ceda_vomitjar_probability 0
+			sv_infinite_primary_ammo 1
+			z_vomit_fade_duration 1
+			z_vomit_fade_start 1
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+		}
+	}
+
+	"versuscoopnotank"
+	{
+		"base"		"versus"
+		"maxplayers"	"4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"		
+
+		convar
+		{
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			sb_friend_immobilized_reaction_time_vs 0.0
+			vs_max_team_switches 99
+		}		
+	}
+	
+	"meleevs"
+	{
+		"base"		"versus"
+		"maxplayers"	"8"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"playercontrolledzombies"	"1"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			director_gas_can_density 0.00
+			director_oxygen_tank_density 0.00
+			director_propane_tank_density 0.00
+			director_scavenge_item_override 1
+			sb_max_team_melee_weapons 4
+			//sb_melee_approach_victim 1
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			versus_wandering_zombie_density 0
+			vs_max_team_switches 99
+			z_mega_mob_spawn_min_interval 99999
+			z_mega_mob_spawn_max_interval 99999
+			z_mob_spawn_min_interval_easy 99999
+			z_mob_spawn_max_interval_easy 99999
+			z_mob_spawn_min_interval_expert 99999
+			z_mob_spawn_max_interval_expert 99999
+			z_mob_spawn_min_interval_hard 99999
+			z_mob_spawn_max_interval_hard 99999
+			z_mob_spawn_min_interval_normal 99999
+			z_mob_spawn_max_interval_normal 99999
+			z_tank_health 100
+			z_versus_boomer_limit 1
+			z_versus_charger_limit 0
+			z_versus_hunter_limit 2
+			z_versus_jockey_limit 0
+			z_versus_smoker_limit 0
+			z_versus_spitter_limit 1
+			z_wandering_density 0
+			z_witch_health 100
+		}		
+	}
+
+	"clawhammer"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{ 
+			sv_infinite_primary_ammo 1
+			survivor_friendly_fire_factor_easy 0
+			survivor_friendly_fire_factor_normal 0
+			survivor_friendly_fire_factor_hard 0
+			survivor_friendly_fire_factor_expert 0
+			survivor_burn_factor_easy 0
+			survivor_burn_factor_expert 0
+			survivor_burn_factor_hard 0
+			survivor_burn_factor_normal 0
+			survivor_max_incapacitated_count 0
+			survivor_revive_health 100
+			sb_all_bot_game 1
+			allow_all_bot_survivor_team 1
+			survivor_respawn_with_guns 2
+			z_charger_pound_dmg 20
+			z_charger_health 1
+			z_charge_interval 0
+			z_charge_max_damage 15
+			z_hunter_health 1
+			z_pounce_damage 10
+			z_tank_health 3000
+			//claw_range 0
+		}
+	}
+
+	"DarknessFalls"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+		"hasdifficulty"		"0"
+		convar
+		{
+			"cl_glow_brightness" 0
+			"director_scavenge_item_override" 1
+			"director_pipe_bomb_density" 10
+			"director_molotov_density" 10
+			"first_aid_heal_percent" 100
+			"first_aid_kit_use_duration" 5
+			"fog_override" 1
+			"fog_start" 1
+			"fog_end" 1
+			"fog_startskybox" 1
+			"fog_endskybox" 1
+			"fog_maxdensity" .98
+			"fog_maxdensityskybox" .998
+			fog_color 0 0 0
+			fog_colorskybox 1 1 1
+			fog_2dskyboxfogfactor .98
+			"z_witch_always_kills" 1
+			"r_flashlightfov" 40
+			"r_flashlightfar" 2000
+			"r_flashlightbrightness" 8
+			"r_farz" 10000
+			"r_skyboxfogfactor" 1
+		}
+	}
+
+	"DarknessFalls2"
+	{
+		"base"		"coop"
+		"maxplayers"    "4"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+		
+		"hasdifficulty"		"0"
+		convar
+		{
+			"cl_glow_brightness" 0
+			"director_scavenge_item_override" 1
+			"director_pipe_bomb_density" 10
+			"director_molotov_density" 10
+			"first_aid_heal_percent" 100
+			"first_aid_kit_use_duration" 5
+			"fog_override" 1
+			"fog_start" 1
+			"fog_end" 1
+			"fog_startskybox" 1
+			"fog_endskybox" 1
+			"fog_maxdensity" .98
+			"fog_maxdensityskybox" .998
+			fog_color 0 0 0
+			fog_colorskybox 1 1 1
+			fog_2dskyboxfogfactor .98
+			"z_witch_always_kills" 1
+			"r_flashlightfov" 40
+			"r_flashlightfar" 2000
+			"r_flashlightbrightness" 8
+			"r_farz" 10000
+			"r_skyboxfogfactor" 1
+			hidehud 64
+		}
+	}
+
+	"chaos"
+	{
+		"base" "realism"
+		"maxplayers" "4"
+		"x360ctx" "0"
+		"x360matchrule" "0"
+		"x360presence" "5" 
+		"x360presence:"
+		{
+			"network:offline" "11"
+			"play:commentary" "3"
+			"play:credits" "2"
+		}
+		"hasdifficulty" "1"
+		convar
+		{
+
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 242
+			"fog_end" 730
+			"fog_startskybox" -10000
+			"fog_endskybox" -10000
+			"fog_enableskybox" 1
+			"z_spawn_mobs_behind_chance" 33
+			"z_mob_spawn_min_size" 50
+			"z_mob_spawn_max_size" 80
+			"z_mob_population_density" 4
+			"z_spawn_speed" 80
+			"z_common_limit" 90
+			"z_mega_mob_size" 90
+			"z_mob_spawn_min_interval_normal" 4
+			"z_mob_spawn_max_interval_normal" 8
+			"z_boomer_limit" 0
+			"z_charger_limit" 0
+			"z_hunter_limit" 0
+			"z_jockey_limit" 0
+			"z_smoker_limit" 0
+			"z_spitter_limit" 0
+			"ammo_shotgun_max" 24
+			"ammo_smg_max" 150
+			"ammo_assaultrifle_max" 120
+			"ammo_autoshotgun_max" 30
+			"ammo_huntingrifle_max" 45
+			"ammo_grenadelauncher_max" 5
+			"ammo_sniperrifle_max" 30
+			"z_tank_speed" 120
+			"z_tank_health" 9000
+			"z_tank_throw_force" 520
+			"z_tank_throw_health" 75
+			"z_speed" 150
+			"z_health" 550
+
+		}
+	}
+
+	"insanity"
+	{
+		"base" "realism"
+		"maxplayers" "4"
+		"x360ctx" "0"
+		"x360matchrule" "0"
+		"x360presence" "5" 
+		"x360presence:"
+		{
+			"network:offline" "11"
+			"play:commentary" "3"
+			"play:credits" "2"
+		}
+		"hasdifficulty" "1"
+		convar
+		{
+
+			"fog_override" 1
+			"fog_enable" 1
+			"fog_start" 242
+			"fog_end" 730
+			"fog_startskybox" -10000
+			"fog_endskybox" -10000
+			"fog_enableskybox" 1
+			"first_aid_heal_percent" 0.9
+			"pain_pills_health_value" 65
+			"pain_pills_decay_rate" 0.21
+			"director_pain_pill_density" 7.48
+			"ammo_shotgun_max" 72
+			"ammo_assaultrifle_max" 420
+			"ammo_autoshotgun_max" 130
+			"ammo_huntingrifle_max" 180
+			"ammo_m60_max" 100
+			"ammo_sniperrifle_max" 220
+			"z_tank_speed" 275
+			"z_speed" 450
+			"z_hunter_health" 350
+			"z_jockey_health" 435
+			"z_smoker_health" 300
+			"z_charger_health" 725
+			"z_spitter_health" 200
+			"z_mute_infected" 1
+			"music_manager" 0
+			"snd_music_volume" 0
+			"survivor_max_incapacitated_count" 2
+			"z_hear_gunfire_range" 2000
+			"z_hear_runner_far_range" 2000
+			"z_hear_runner_near_range" 2000
+			"z_close_target_notice_distance" 240
+			"director_melee_weapon_density" 24
+			"z_mega_mob_size" 50
+			"z_mob_spawn_min_size" 25
+			"z_mob_spawn_max_size" 50
+			"z_mob_spawn_finale_size" 50
+			"z_mob_spawn_max_interval_easy" 30
+			"z_mob_spawn_max_interval_expert" 45
+			"z_mob_spawn_max_interval_hard" 40
+			"z_mob_spawn_max_interval_normal" 35
+			"z_mob_spawn_min_interval_easy" 25
+			"z_mob_spawn_min_interval_expert" 30
+			"z_mob_spawn_min_interval_hard" 30
+			"z_mob_spawn_min_interval_normal" 30
+
+		}
+	}
+
+	"grenades"
+	{
+		"base"		"coop"
+		"maxplayers"    "1"
+		"achievementindex"	"5"
+		"x360ctx"	"12"
+		"dlcmask"	"0x0000000000000002"
+
+		convar
+		{
+			"z_hunter_health" 550
+			"z_jockey_health" 635
+			"z_smoker_health" 600
+			"z_charger_health" 725
+			"z_spitter_health" 500
+			"z_tank_health" 10000
+			"z_witch_health" 2000
+			"sv_infinite_primary_ammo" 1
+			"z_witch_always_kills" 1
+			"sv_survivor_max_incapacitated_count" 0
+			"director_no_mobs" 1
+			"sv_z_max_stagger_duration" 1
+			"sv_z_pounce_damage" 20
+			"sv_z_pounce_damage_interval" 20
+			"sv_z_tank_grenade_damage" 500
+			"sv_z_tank_speed" 300
+			"sv_grenadelauncher_ff_scale_self" 0
+			"sv_z_jockey_ride_damage" 15
+			"sv_z_spitter_max_wait_time" 15
+			"sv_z_spitter_speed" 270
+			"sv_z_charger_pound_dmg" 25
+			"sv_z_charger_speed" 250
+			"sv_tongue_choke_damage_amount" 18
+			sv_pausable 1
+		}
+	}
+}
